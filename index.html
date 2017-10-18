@@ -92,7 +92,9 @@
   <div class="container" id="home" style="height:700px;">
     <div class="row text-center">
       <div class="col-md-12">
-        <h1 class="head-main"><span style="background-color:#323232!important;padding: 0px 43px 0px 30px!important;border-radius:20px;color:#ed7900; opacity:0.8!important;font-family:helvetica;">U<span style="font-size:15.6%;font-family:geobats;color:#ed7900;">Ú</span>KL<span style="color:#323232;font-family:helvetica;font-size:50%;background-color:#ababab;position:relative; left:20px; bottom:14px;padding-left:15px; padding-right:15px;border-radius:10px;">Research</span></span></h1>
+
+        <h1 class="head-main"><span style="background-color:#323232!important;padding: 0px 43px 0px 30px!important;border-radius:2vw;color:#ed7900; opacity:0.8!important;font-family:helvetica; font-size: 8vw;">U<span style="font-size:15.6%;font-family:geobats;color:#ed7900;">Ú</span>KL<span style="color:#323232;font-family:helvetica;font-size:50%;background-color:#ababab;position:relative; left:20px; bottom:1.5vw;padding-left:15px; padding-right:15px;border-radius:1vw;">Research</span></span></h1>
+
         <h2 class="head-sub-main"></h2>
         <h3 class="head-last" style="font-weight:bold;"></h3>
       </div>
@@ -120,9 +122,9 @@
           </li>
           <li id="navbar-nav-item-about-team"><a href="#about-team" style="font-weight:bold;">Members</a>
           </li>
-          <li id="navbar-nav-item-price-sec"><a href="#price-sec" style="font-weight:bold;">Publication</a>
+          <li id="navbar-nav-item-price-sec"><a href="#price-sec" style="font-weight:bold;">Publications</a>
           </li>
-          <li id="navbar-nav-item-services-sec"><a href="#services-sec" style="font-weight:bold;">Resource</a>
+          <li id="navbar-nav-item-services-sec"><a href="#services-sec" style="font-weight:bold;">Resources</a>
           </li>
           <li id="navbar-nav-item-contact-sec"><a href="#contact-sec" style="font-weight:bold;">Contact</a>
           </li>
@@ -137,9 +139,66 @@
   <!--About Section-->
   <section class="for-full-back color-dark" id="about">
     <div class="container">
+
+      <div class="row text-center" id="research-directions">
+        <div class="col-md-8 col-md-offset-2 ">
+          <!--
+          <h1><span style="color:white;font-family:cursive;font-weight:bold;font-size:400%;">&nu;</span><subscript><span style="color:white;font-family:geobats;font-weight:bold;font-size:15%;position:relative; top:20px;right:20px;">Ú</span></subscript></h1>
+        -->
+          <h1 style="color:white;"><img src="assets/img/research.png" width="130px"/></h1>
+          <h4 style="color:white;" align="justify">
+          <strong>
+            Our research focuses on experimental neutrino physics. As members of the MINOS/MINOS+, NO\(\nu\)A, SuperNEMO, and MINER Collaborations, we study neutrino oscillations, neutrinoless double beta decay, and coherent neutrino scattering. Find out more about these topics and the research we conduct by clicking on the buttons below.
+          </strong>
+        </h4>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-12">
+          <a href="nuosc.html"><div class="col-md-6">
+            <div class="service-div" style="height:200px">
+              <div style="max-width:350px;margin: 0 auto;">
+                <img src="assets/img/researchPlots/MINOSpng/MinosPlusLogo.png" style="max-height:100px;" align="left"/>
+                <img src="assets/img/nova.png" style="max-height:100px;" align="center"/>
+                <img src="assets/img/DUNE.png" style="max-height:100px;position:relative;top:10px;" align="right"/>
+              </div>
+              <h3> Neutrino Oscillations </h3>
+            </div>
+          </div></a>
+
+
+          <a href="doublebetadecay.html"><div class="col-md-6">
+            <div class="service-div" style="height:200px">
+              <img src="assets/img/supernemo.png" style="max-height:100px;"/>
+              <h3> Neutrinoless Double Beta Decay </h3>
+            </div>
+          </div></a>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-12">
+          <a href="nucohscat.html"><div class="col-md-6">
+            <div class="service-div" style="height:200px">
+              <img src="assets/img/miner.png" style="max-height:100px;"/>
+              <h3>Coherent Neutrino Scattering </h3>
+            </div>
+          </div></a>
+
+          <div class="col-md-6">
+            <div class="service-div" style="height:200px">
+              <i class="fa fa-microchip fa-rotate-90 fa-5x" style="max-height:200px;"></i>
+              <h3> Detector R&amp;D </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row text-center">
         <div class="col-md-8 col-md-offset-2 ">
-          <h1 style="color:white;"><i class="fa fa-star fa-2x"></i></h1>
+          <!--<h1 style="color:white;"><i class="fa fa-star fa-2x"></i></h1>-->
+          <h1 style="color:white;">Selected Work</h1>
           <h4 style="color:white;">
           <strong>
             Selected results from the UTKL Research Group.
@@ -151,11 +210,9 @@
       <div id="selected-work-carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators RIGHT -->
         <div style="height:800px;width:150px;position:absolute;right:-110px;" href="#selected-work-carousel" data-slide="next">
-          <i class="fa fa-chevron-right fa-5x" style="color:white;position:relative;top:45%;left:67%;"></i>
         </div>
         <!-- Indicators LEFT -->
         <div style="height:800px;width:150px;position:absolute;left:-110px;" href="#selected-work-carousel" data-slide="prev">
-          <i class="fa fa-chevron-left fa-5x" style="color:white;position:relative;top:45%;"></i>
         </div>
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -237,62 +294,6 @@
         </div>
       </div>
 
-
-      <div class="row text-center" id="research-directions">
-        <div class="col-md-8 col-md-offset-2 ">
-          <!--
-          <h1><span style="color:white;font-family:cursive;font-weight:bold;font-size:400%;">&nu;</span><subscript><span style="color:white;font-family:geobats;font-weight:bold;font-size:15%;position:relative; top:20px;right:20px;">Ú</span></subscript></h1>
-        -->
-          <h1 style="color:white;"><img src="assets/img/research.png" width="130px"/></h1>
-          <h4 style="color:white;" align="justify">
-          <strong>
-            Our research focuses on experimental neutrino physics. As members of the MINOS/MINOS+, NO\(\nu\)A, SuperNEMO, and MINER Collaborations, we study neutrino oscillations, neutrinoless double beta decay, and coherent neutrino scattering. Find out more about these topics and the research we conduct by clicking on the buttons below.
-          </strong>
-        </h4>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-md-12">
-          <a href="nuosc.html"><div class="col-md-6">
-            <div class="service-div" style="height:200px">
-              <div style="max-width:350px;margin: 0 auto;">
-                <img src="assets/img/researchPlots/MINOSpng/MinosPlusLogo.png" style="max-height:100px;" align="left"/>
-                <img src="assets/img/nova.png" style="max-height:100px;" align="center"/>
-                <img src="assets/img/DUNE.png" style="max-height:100px;position:relative;top:10px;" align="right"/>
-              </div>
-              <h3> Neutrino Oscillations </h3>
-            </div>
-          </div></a>
-
-
-          <a href="doublebetadecay.html"><div class="col-md-6">
-            <div class="service-div" style="height:200px">
-              <img src="assets/img/supernemo.png" style="max-height:100px;"/>
-              <h3> Neutrinoless Double Beta Decay </h3>
-            </div>
-          </div></a>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-md-12">
-          <a href="nucohscat.html"><div class="col-md-6">
-            <div class="service-div" style="height:200px">
-              <img src="assets/img/miner.png" style="max-height:100px;"/>
-              <h3>Coherent Neutrino Scattering </h3>
-            </div>
-          </div></a>
-
-          <div class="col-md-6">
-            <div class="service-div" style="height:200px">
-              <i class="fa fa-microchip fa-rotate-90 fa-5x" style="max-height:200px;"></i>
-              <h3> Detector R&amp;D </h3>]
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
   <!--End About Section-->
@@ -303,11 +304,12 @@
 
       <div class="row text-center">
         <div class="col-md-8 col-md-offset-2 ">
-          <h1><i class="fa fa-users fa-2x"></i></h1>
+          <!-- <h1><i class="fa fa-users fa-2x"></i></h1> -->
+          <h1>Group Members</h1>
           <h4>
-            <strong>
+            <!-- <strong>
             We are a diverse research team with people from all over the world.
-            </strong>
+            </strong> -->
             <!--
             <br />
             <img src="assets/flags/flags/4x3/be.svg" style="max-width:60px;"/>
@@ -424,10 +426,11 @@
 
       <div class="row text-center">
         <div class="col-md-12">
-          <h1><i class="fa fa-graduation-cap fa-2x"></i></h1>
-          <h3 style="font-weight:bold;">
+          <!-- <h1><i class="fa fa-graduation-cap fa-2x"></i></h1> -->
+          <h1>Alumni</i></h1>
+          <!-- <h3 style="font-weight:bold;">
             Alumni of the UTKL Research Group
-          </h3>
+          </h3> -->
           <br />
         </div>
         <div class="col-md-12 g-pad-bottom">
@@ -524,42 +527,44 @@
             <ol class="plan">
               <li class="plan-head">Journal/Proceeding Papers</li>
               <!--<li class="main-price">$99 only</li>-->
-              <li>S. De Rijck and J. Huang, <strong>Constraints on large extra dimensions from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 888 (2017) no.1, 012162, doi: 10.1088/1742-6596/888/1/012162.</li>
-              <li>T. J. Carroll, <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 888 (2017) no.1, 012161, doi: 10.1088/1742-6596/888/1/012161.</li>
-              <li>S. De Rijck, <strong>Latest Results from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 873 (2017) no.1, 012032, doi: 10.1088/17426596/873/1/012032.</li>
-              <li>P. Adamson et al. [NOvA Collaboration], <strong>Constraints on Oscillation Parametersfrom \(\nu_e\) Appearance and \(\nu_\mu\) Disappearance in NOvA</strong>, Phys. Rev. Lett. 118, no. 23, 231801 (2017), doi:10.1103/PhysRevLett.118.231801,
+              <li>[1] S. De Rijck and J. Huang, <strong>Constraints on large extra dimensions from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 888 (2017) no.1, 012162, doi: 10.1088/1742-6596/888/1/012162.</li>
+              <li>[2] T. J. Carroll, <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 888 (2017) no.1, 012161, doi: 10.1088/1742-6596/888/1/012161.</li>
+              <li>[3] S. De Rijck, <strong>Latest Results from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 873 (2017) no.1, 012032, doi: 10.1088/17426596/873/1/012032.</li>
+              <li>[4] P. Adamson et al. [NOvA Collaboration], <strong>Constraints on Oscillation Parametersfrom \(\nu_e\) Appearance and \(\nu_\mu\) Disappearance in NOvA</strong>, Phys. Rev. Lett. 118, no. 23, 231801 (2017), doi:10.1103/PhysRevLett.118.231801,
                 [arXiv:1703.03328 [hep-ex]].</li>
-              <li>P. Adamson et al. [NOvA Collaboration], <strong>Measurement of the neutrino mixing angle \(\theta_{23}\) in NOvA</strong>, Phys. Rev. Lett. 118, no. 15, 151802 (2017), doi:10.1103/PhysRevLett.118.151802, [arXiv:1701.05891 [hep-ex]].</li>
-              <li>A. Blake et al., <strong>Accelerator/Experiment Operations - FY 2016</strong>, FERMILAB-TM-2637-DI.</li>
-              <li>R. Acciarri et al. [ArgoNeuT Collaboration], <strong>First Observation of Low Energy Electron Neutrinos in a Liquid Argon Time Projection Chamber</strong>, Phys. Rev. D 95, no. 7, 072005 (2017), [Phys. Rev. D 95, 072005 (2017)], doi:10.1103/PhysRevD.95.072005,
+              <li>[5] P. Adamson et al. [NOvA Collaboration], <strong>Measurement of the neutrino mixing angle \(\theta_{23}\) in NOvA</strong>, Phys. Rev. Lett. 118, no. 15, 151802 (2017), doi:10.1103/PhysRevLett.118.151802, [arXiv:1701.05891 [hep-ex]].</li>
+              <li>[6] A. Blake et al., <strong>Accelerator/Experiment Operations - FY 2016</strong>, FERMILAB-TM-2637-DI.</li>
+              <li>[7] R. Acciarri et al. [ArgoNeuT Collaboration], <strong>First Observation of Low Energy Electron Neutrinos in a Liquid Argon Time Projection Chamber</strong>, Phys. Rev. D 95, no. 7, 072005 (2017), [Phys. Rev. D 95, 072005 (2017)], doi:10.1103/PhysRevD.95.072005,
                 [arXiv:1610.04102 [hep-ex]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Constraints on Large Extra Dimensions from the MINOS Experiment</strong>, Phys. Rev. D 94, no. 11, 111101 (2016), doi:10.1103/PhysRevD.94.111101, [arXiv:1608.06964 [hep-ex]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Measurement of single \(\pi_0\) production by coherent neutral-current \(\nu\)-Fe interactions in the MINOS Near Detector</strong>, Phys. Rev. D 94, no. 7, 072006 (2016), doi:10.1103/PhysRevD.94.072006,
+              <li>[8] P. Adamson et al. [MINOS Collaboration], <strong>Constraints on Large Extra Dimensions from the MINOS Experiment</strong>, Phys. Rev. D 94, no. 11, 111101 (2016), doi:10.1103/PhysRevD.94.111101, [arXiv:1608.06964 [hep-ex]].</li>
+              <li>[9] P. Adamson et al. [MINOS Collaboration], <strong>Measurement of single \(\pi_0\) production by coherent neutral-current \(\nu\)-Fe interactions in the MINOS Near Detector</strong>, Phys. Rev. D 94, no. 7, 072006 (2016), doi:10.1103/PhysRevD.94.072006,
                 [arXiv:1608.05702 [hep-ex]].</li>
-              <li>P. Adamson et al. [Daya Bay and MINOS Collaborations], <strong>Limits on Active to Sterile Neutrino Oscillations from Disappearance Searches in the MINOS, Daya Bay, and Bugey-3 Experiments</strong>, Phys. Rev. Lett. 117, no. 15, 151801 (2016),
+              <li>[10] P. Adamson et al. [Daya Bay and MINOS Collaborations], <strong>Limits on Active to Sterile Neutrino Oscillations from Disappearance Searches in the MINOS, Daya Bay, and Bugey-3 Experiments</strong>, Phys. Rev. Lett. 117, no. 15, 151801 (2016),
                 Addendum: [Phys. Rev. Lett. 117, no. 20, 209901 (2016)], doi:10.1103/PhysRevLett.117.151801, 10.1103/PhysRevLett.117.209901, [arXiv:1607.01177 [hep-ex]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Search for Sterile Neutrinos Mixing with Muon Neutrinos in MINOS</strong>, Phys. Rev. Lett. 117, no. 15, 151803 (2016), doi:10.1103/PhysRevLett.117.151803, [arXiv:1607.01176 [hep-ex]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Search for flavor-changing nonstandard neutrino interactions using \(\nu_e\) appearance in MINOS</strong>, Phys. Rev. D 95, no. 1, 012005 (2017), doi:10.1103/PhysRevD.95.012005, [arXiv:1605.06169
+              <li>[11] P. Adamson et al. [MINOS Collaboration], <strong>Search for Sterile Neutrinos Mixing with Muon Neutrinos in MINOS</strong>, Phys. Rev. Lett. 117, no. 15, 151803 (2016), doi:10.1103/PhysRevLett.117.151803, [arXiv:1607.01176 [hep-ex]].</li>
+              <li>[12] P. Adamson et al. [MINOS Collaboration], <strong>Search for flavor-changing nonstandard neutrino interactions using \(\nu_e\) appearance in MINOS</strong>, Phys. Rev. D 95, no. 1, 012005 (2017), doi:10.1103/PhysRevD.95.012005, [arXiv:1605.06169
                 [hep-ex]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Measurement of the Multiple-Muon Charge Ratio in the MINOS Far Detector</strong>, Phys. Rev. D 93, no. 5, 052017 (2016), doi:10.1103/PhysRevD.93.052017, [arXiv:1602.00783 [hep-ex]].</li>
-              <li>P. Adamson et al. [NOvA Collaboration], <strong>First measurement of muon neutrino disappearance in NOvA</strong>, Phys. Rev. D 93, no. 5, 051104 (2016), doi:10.1103/PhysRevD.93.051104, [arXiv:1601.05037 [hep-ex]].</li>
-              <li>P. Adamson et al. [NOvA Collaboration], <strong>First measurement of electron neutrino appearance in NOvA</strong>, Phys. Rev. Lett. 116, no. 15, 151806 (2016), doi:10.1103/PhysRevLett.116.151806, [arXiv:1601.05022 [hep-ex]].</li>
-              <li>R. Acciarri et al. [ArgoNeuT Collaboration], <strong>Measurement of \(\nu_\mu\) and \(\bar{\nu}_\mu\) neutral current \(\pi_0\rightarrow\gamma\gamma\)  production in the ArgoNeuT detector</strong>, Phys. Rev. D 96, no. 1, 012006 (2017),
+              <li>[13] P. Adamson et al. [MINOS Collaboration], <strong>Measurement of the Multiple-Muon Charge Ratio in the MINOS Far Detector</strong>, Phys. Rev. D 93, no. 5, 052017 (2016), doi:10.1103/PhysRevD.93.052017, [arXiv:1602.00783 [hep-ex]].</li>
+              <li>[14] P. Adamson et al. [NOvA Collaboration], <strong>First measurement of muon neutrino disappearance in NOvA</strong>, Phys. Rev. D 93, no. 5, 051104 (2016), doi:10.1103/PhysRevD.93.051104, [arXiv:1601.05037 [hep-ex]].</li>
+              <li>[15] P. Adamson et al. [NOvA Collaboration], <strong>First measurement of electron neutrino appearance in NOvA</strong>, Phys. Rev. Lett. 116, no. 15, 151806 (2016), doi:10.1103/PhysRevLett.116.151806, [arXiv:1601.05022 [hep-ex]].</li>
+              <li>[16] R. Acciarri et al. [ArgoNeuT Collaboration], <strong>Measurement of \(\nu_\mu\) and \(\bar{\nu}_\mu\) neutral current \(\pi_0\rightarrow\gamma\gamma\)  production in the ArgoNeuT detector</strong>, Phys. Rev. D 96, no. 1, 012006 (2017),
                 doi:10.1103/PhysRevD.96.012006, [arXiv:1511.00941 [hep-ex]].</li>
-              <li>P. Czarapata et al., <strong>Accelerator/Experiment Operations - FY 2015</strong>, FERMILAB-TM-2612-DI.</li>
-              <li>P. Adamson et al., <strong>The NuMI Neutrino Beam</strong>, Nucl. Instrum. Meth. A 806, 279 (2016), doi:10.1016/j.nima.2015.08.063, [arXiv:1507.06690 [physics.acc-ph]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Precision measurement of the speed of propagation of neutrinos using the MINOS detectors</strong>, Phys. Rev. D 92, no. 5, 052005 (2015), doi:10.1103/PhysRevD.92.052005, [arXiv:1507.04328
+              <li>[17] P. Czarapata et al., <strong>Accelerator/Experiment Operations - FY 2015</strong>, FERMILAB-TM-2612-DI.</li>
+              <li>[18] P. Adamson et al., <strong>The NuMI Neutrino Beam</strong>, Nucl. Instrum. Meth. A 806, 279 (2016), doi:10.1016/j.nima.2015.08.063, [arXiv:1507.06690 [physics.acc-ph]].</li>
+              <li>[19] P. Adamson et al. [MINOS Collaboration], <strong>Precision measurement of the speed of propagation of neutrinos using the MINOS detectors</strong>, Phys. Rev. D 92, no. 5, 052005 (2015), doi:10.1103/PhysRevD.92.052005, [arXiv:1507.04328
                 [hep-ex]].</li>
-              <li>R. Acciarri et al., <strong>Summary of the Second Workshop on Liquid Argon Time Projection Chamber Research and Development in the United States</strong>, JINST 10, no. 07, T07006 (2015), doi:10.1088/1748-0221/10/07/T07006, [arXiv:1504.05608
+              <li>[20] R. Acciarri et al., <strong>Summary of the Second Workshop on Liquid Argon Time Projection Chamber Research and Development in the United States</strong>, JINST 10, no. 07, T07006 (2015), doi:10.1088/1748-0221/10/07/T07006, [arXiv:1504.05608
                 [physics.ins-det]].</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Observation of Seasonal Variation of Atmospheric Multiple-Muon Events in the MINOS Near and Far Detectors</strong>, Phys. Rev. D 91, no. 11, 112006 (2015), doi:10.1103/PhysRevD.91.112006,
+              <li>[21] P. Adamson et al. [MINOS Collaboration], <strong>Observation of Seasonal Variation of Atmospheric Multiple-Muon Events in the MINOS Near and Far Detectors</strong>, Phys. Rev. D 91, no. 11, 112006 (2015), doi:10.1103/PhysRevD.91.112006,
                 [arXiv:1503.09104[hep-ex]].</li>
-              <li>K. Lang, <strong>Future prospects for measurements of mass hierarchy and CP violation</strong>, Nucl. Part. Phys. Proc. 260, 183 (2015), doi:10.1016/j.nuclphysbps.2015.02.038.</li>
-              <li>P. Adamson et al. [MINOS Collaboration], <strong>Study of quasielastic scattering using charged-current \(\nu_\mu\)–Fe interactions in the MINOS near detector</strong>, Phys. Rev. D 91, no. 1, 012005 (2015), doi:10.1103/PhysRevD.91.012005,
+              <li>[22] K. Lang, <strong>Future prospects for measurements of mass hierarchy and CP violation</strong>, Nucl. Part. Phys. Proc. 260, 183 (2015), doi:10.1016/j.nuclphysbps.2015.02.038.</li>
+              <li>[23] P. Adamson et al. [MINOS Collaboration], <strong>Study of quasielastic scattering using charged-current \(\nu_\mu\)–Fe interactions in the MINOS near detector</strong>, Phys. Rev. D 91, no. 1, 012005 (2015), doi:10.1103/PhysRevD.91.012005,
                 [arXiv:1410.8613 [hep-ex]].</li>
+              <!--
               <li class="bottom" style="text-align:center;">
                 <a href="#" class="btn btn-primary">Download BiBTeX</a>
               </li>
+            -->
             </ol>
           </div>
         </div>
@@ -569,16 +574,18 @@
             <ol class="plan">
               <li class="plan-head">Preprints</li>
               <!--<li class="main-price">$99 only</li>-->
-              <li>T. J. Carroll, <strong>New Constraints on Sterile Neutrinos with MINOS/MINOS+ and Daya Bay</strong>,  arXiv:1705.05064 [hep-ex].</li>
-              <li>B. Abi et al. [DUNE Collaboration], <strong>The Single-Phase ProtoDUNE Technical Design Report</strong>, arXiv:1706.07081 [physics.ins-det].</li>
-              <li>P. Adamson et al. [NOvA Collaboration], <strong>Search for active-sterile neutrino mixing using neutral-current interactions in NOvA</strong>, arXiv:1706.04592 [hep-ex].</li>
-              <li>R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 1: The LBNF and DUNE Projects</strong>, arXiv:1601.05471 [physics.ins-det].</li>
-              <li>R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 4 The DUNE Detectors at LBNF</strong>, arXiv:1601.02984 [physics.ins-det].</li>
-              <li>R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 2: The Physics Program for DUNE at LBNF</strong>, arXiv:1512.06148 [physics.ins-det].</li>
-              <li>K. Lang [CHIPS Collaboration]<strong>, Prospects for CHIPS (R&amp;D of Water Cherenkov Detectors in Mine Pits)</strong>, arXiv:1504.08330 [physics.ins-det].</li>
+              <li>[1] T. J. Carroll, <strong>New Constraints on Sterile Neutrinos with MINOS/MINOS+ and Daya Bay</strong>,  arXiv:1705.05064 [hep-ex].</li>
+              <li>[2] B. Abi et al. [DUNE Collaboration], <strong>The Single-Phase ProtoDUNE Technical Design Report</strong>, arXiv:1706.07081 [physics.ins-det].</li>
+              <li>[3] P. Adamson et al. [NOvA Collaboration], <strong>Search for active-sterile neutrino mixing using neutral-current interactions in NOvA</strong>, arXiv:1706.04592 [hep-ex].</li>
+              <li>[4] R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 1: The LBNF and DUNE Projects</strong>, arXiv:1601.05471 [physics.ins-det].</li>
+              <li>[5] R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 4 The DUNE Detectors at LBNF</strong>, arXiv:1601.02984 [physics.ins-det].</li>
+              <li>[6] R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 2: The Physics Program for DUNE at LBNF</strong>, arXiv:1512.06148 [physics.ins-det].</li>
+              <li>[7] K. Lang [CHIPS Collaboration]<strong>, Prospects for CHIPS (R&amp;D of Water Cherenkov Detectors in Mine Pits)</strong>, arXiv:1504.08330 [physics.ins-det].</li>
+              <!--
               <li class="bottom" style="text-align:center;">
                 <a href="#" class="btn btn-primary">Download BiBTeX</a>
               </li>
+            -->
             </ol>
           </div>
         </div>
@@ -588,16 +595,16 @@
             <ul class="plan">
               <li class="plan-head">Posters</li>
               <!--<li class="main-price">$99 only</li>-->
-              <li>S. De Rijck, <strong>Constraints on Large Extra Dimensions from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], Proceedings of XXVII International Conference on Neutrino Physics and Astrophysics (Neutrino 2016),
+              <li>[1] S. De Rijck, <strong>Constraints on Large Extra Dimensions from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], Proceedings of XXVII International Conference on Neutrino Physics and Astrophysics (Neutrino 2016),
                 London, England (poster) (to appear in J. Phys.: Conf. Ser.).</li>
-              <li>T. J. Carroll, <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], Proceedings of XXVII International Conference on Neutrino Physics and Astrophysics (Neutrino 2016), London, England (poster) (to
+              <li>[2] T. J. Carroll, <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], Proceedings of XXVII International Conference on Neutrino Physics and Astrophysics (Neutrino 2016), London, England (poster) (to
                 appear in J. Phys.: Conf. Ser.).</li>
-              <li><strong>Electron Neutrino Appearance Analysis in MINOS+</strong>, a poster by Dung Duc Phan, on behalf of the MINOS+ Collaboration, APS April Meeting, 27–31 January 2017, Washington D.C, USA.</li>
-              <li><strong>Constraints on Large Extra Dimensions from MINOS and MINOS+</strong>, a poster by Simon De Rijck, on behalf of the MINOS+ Collaboration, The 10th International Neutrino Summer School, Fermilab, August 15, 2017.</li>
-              <li><strong>Constraints on large extra dimensions from MINOS and MINOS+</strong>, a poster by Simon De Rijck, on behalf of the MINOS+ Collaboration, The XXVII International Conference on Neutrino Physics and Astrophysics, London, United Kingdom, July 6, 2016.</li>
-              <li><strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a poster by Tom Carroll, on behalf of the MINOS+ Collaboration, The 10th International Neutrino Summer School, Fermilab, August 15, 2017.</li>
-              <li><strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a poster by Tom Carroll, on behalf of the MINOS+ Collaboration, The XXVII International Conference on Neutrino Physics and Astrophysics, London, United Kingdom, July 6, 2016.</li>
-              <li><strong>The LArIAT Experiment</strong>, a poster by Brandon Soubasis, on behalf of the LArIAT Collaboration, Physics Department Open House, UT at Austin, April, 2017.</li>
+              <li>[3] <strong>Electron Neutrino Appearance Analysis in MINOS+</strong>, a poster by Dung Duc Phan, on behalf of the MINOS+ Collaboration, APS April Meeting, 27–31 January 2017, Washington D.C, USA.</li>
+              <li>[4] <strong>Constraints on Large Extra Dimensions from MINOS and MINOS+</strong>, a poster by Simon De Rijck, on behalf of the MINOS+ Collaboration, The 10th International Neutrino Summer School, Fermilab, August 15, 2017.</li>
+              <li>[5] <strong>Constraints on large extra dimensions from MINOS and MINOS+</strong>, a poster by Simon De Rijck, on behalf of the MINOS+ Collaboration, The XXVII International Conference on Neutrino Physics and Astrophysics, London, United Kingdom, July 6, 2016.</li>
+              <li>[6] <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a poster by Tom Carroll, on behalf of the MINOS+ Collaboration, The 10th International Neutrino Summer School, Fermilab, August 15, 2017.</li>
+              <li>[7] <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a poster by Tom Carroll, on behalf of the MINOS+ Collaboration, The XXVII International Conference on Neutrino Physics and Astrophysics, London, United Kingdom, July 6, 2016.</li>
+              <li>[8] <strong>The LArIAT Experiment</strong>, a poster by Brandon Soubasis, on behalf of the LArIAT Collaboration, Physics Department Open House, UT at Austin, April, 2017.</li>
             </ul>
           </div>
         </div>
@@ -607,41 +614,41 @@
             <ul class="plan">
               <li class="plan-head">Talks</li>
               <!--<li class="main-price">$99 only</li>-->
-              <li><strong>Latest Results from MINOS and MINOS+</strong>, a talk by Simon De Rijck, on behalf of the MINOS+ Collaboration, DISCRETE 2016 Symposium, Warsaw, Poland, November 30, 2016.</li>
-              <li><strong>A Search for Large Extra Dimensions in MINOS and MINOS+</strong>, a talk by Simon De Rijck, on behalf of the MINOS+ Collaboration, New Perspectives 2017, Batavia, IL, June 14, 2017.</li>
-              <li><strong>Latest Results from MINOS and MINOS+</strong>, a talk by Simon De Rijck, on behalf of the MINOS+ Collaboration, 2016 APS April Meeting, Salt Lake City, UT, April 17, 2016.</li>
-              <li><strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, The 2017 New Perspectives, Fermilab, June 6, 2016.</li>
-              <li><strong>New Constraints on Sterile Neutrinos with MINOS/MINOS+ and Daya Bay</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, The 52nd Rencontres de Moriond EW 2017, March 24, 2017.</li>
-              <li><strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, APS April 2017 Meeting, January 29, 2017.</li>
-              <li><strong>Neutrino Physics: With and Without Neutrinos</strong>, a talk by Tom Carroll, Physics Dept. Open House, UT at Austin, November 14, 2016.</li>
-              <li><strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, The 2016 New Perspectives, Fermilab, June 14, 2016.</li>
-              <li><strong>MINOS+ Results and Future Plans</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, Workshop on the Intermediate Neutrino Program, February 5, 2015.</li>
-              <li><strong>Muon Neutrino Disappearance Measurements at MINOS+</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, APS April Meeting, April 11, 2015.</li>
-              <li><strong>ArgoNeuT and LArIAT: Status and Progress on Measurements Relevant for DUNE</strong>, a talk by Will Flanagan, Workshop for the Next Generation Nucleon Decay and Neutrino Detector (NNN15), October 28, 2015.</li>
-              <li><strong>Latest Results from MINOS and MINOS+</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, Lake Louise Winter Institute, February 11 2016.</li>
-              <li><strong>MINOS and MINOS+ Results</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, The 2017 Tamura Symposium on Lepton and Baryon Symmetry, May 9, 2017.</li>
-              <li><strong>Latest Results from MINOS and MINOS+</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, XIth International Conference on Interconnections between Particle Physics and Cosmology (PPC 2017), May 23, 2017.</li>
-              <li><strong>Big Data and Dynamic Pricing</strong>, a seminar by Junting Huang (Perfect Price, Inc.), Department of Physics, University of Texas at Austin, January 30, 2017.</li>
-              <li><strong>MINOS+ Update</strong>, presentation by K. Lang, the Program Advisory Committee of Fermi National Accelerator Laboratory, Gleacher Center, Chicago, June 23, 2015.</li>
-              <li><strong>Neutrino Oscillation Experiments</strong>, lecture by K. Lang, The Summer School of Particle and Astroparticle Physics of Annecy-le-Vieux, Annecy-le-Vieux, France, 16-22 July, 2015.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, Colloquium, Department of Physics, University of Athens, Athens, Greece, March 30, 2015.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, CPF seminar, Department of Physics, University of Texas at Austin, April 27, 2015.</li>
-              <li><strong>Future prospects for measurements of mass hierarchy and CP violation</strong>, K. Lang, CPF seminar, Department of Physics, University of Texas at Austin, April 20, 2015.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, APC, University of Paris VI, Paris, France, April 8, 2015.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, LAL Orsay, France, April 7, 2015.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, LAPP, Annecy-Le-Vieux, France, April 3, 2015.</li>
-              <li><strong>Neutrino Oscillations Experiments: (Necessarily) Selected topics (i.e., an abbreviated story)</strong>, K. Lang, Society of Physics Students meeting, UT Austin, November 8, 2015.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, seminar at the University of Osaka, Japan, December 21, 2016.</li>
-              <li><strong>MINOS+: Update and Plans</strong>, K. Lang, Presentation at the Fermilab Program Advisory Committee, Fermilab, January 20, 2016.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, seminar at the Kamioka Laboratory, Japan, March 7, 2016.</li>
-              <li><strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, seminar at the University of Kyoto, Japan, March 11, 2016.</li>
-              <li><strong>Neutrinos – Everything you want to know about neutrinos or could have asked if you knew what to ask! (a necessarily abbreviated story)</strong>, K. Lang, “Pizza seminar</strong>, UT Austin, November 29, 2016.</li>
-              <li><strong>Welcome</strong>, and <strong>Closing Remarks</strong>, K. Lang, organizer’s remarks at The 2017 Tamura Symposium: Lepton and Baryon Symmetry, University of Texas at Austin, Austin, TX 78712, May 8-9, 2017.</li>
-              <li><strong>The Osaka lectures on neutrinos</strong>, K. Lang, a series of 10 seminars based on lectures at the Osaka University, UT Austin, Spring 2017 semester.</li>
-              <li><strong>Opening remarks</strong>, K. Lang, opening remarks at the Viet Nus 2017: <strong>Neutrinos – Challenges and Limitations</strong>, The 14th Rencontres du Vietnam, ICISE, Quy Nhon, Vietnam, July 10, 2017.</li>
-              <li><strong>Future background as a new signal: Introducing the MINER project - a reactor experiment under development</strong>, K. Lang, a VietNus 2017 brief on the MINER experiment, Viet Nus 2017: Neutrinos: challenges and limitations, The 14th Rencontres
+              <li>[1] <strong>Latest Results from MINOS and MINOS+</strong>, a talk by Simon De Rijck, on behalf of the MINOS+ Collaboration, DISCRETE 2016 Symposium, Warsaw, Poland, November 30, 2016.</li>
+              <li>[2] <strong>A Search for Large Extra Dimensions in MINOS and MINOS+</strong>, a talk by Simon De Rijck, on behalf of the MINOS+ Collaboration, New Perspectives 2017, Batavia, IL, June 14, 2017.</li>
+              <li>[3] <strong>Latest Results from MINOS and MINOS+</strong>, a talk by Simon De Rijck, on behalf of the MINOS+ Collaboration, 2016 APS April Meeting, Salt Lake City, UT, April 17, 2016.</li>
+              <li>[4] <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, The 2017 New Perspectives, Fermilab, June 6, 2016.</li>
+              <li>[5] <strong>New Constraints on Sterile Neutrinos with MINOS/MINOS+ and Daya Bay</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, The 52nd Rencontres de Moriond EW 2017, March 24, 2017.</li>
+              <li>[6] <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, APS April 2017 Meeting, January 29, 2017.</li>
+              <li>[7] <strong>Neutrino Physics: With and Without Neutrinos</strong>, a talk by Tom Carroll, Physics Dept. Open House, UT at Austin, November 14, 2016.</li>
+              <li>[8] <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, a talk by Tom Carroll, on behalf of the MINOS+ Collaboration, The 2016 New Perspectives, Fermilab, June 14, 2016.</li>
+              <li>[9] <strong>MINOS+ Results and Future Plans</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, Workshop on the Intermediate Neutrino Program, February 5, 2015.</li>
+              <li>[10] <strong>Muon Neutrino Disappearance Measurements at MINOS+</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, APS April Meeting, April 11, 2015.</li>
+              <li>[11] <strong>ArgoNeuT and LArIAT: Status and Progress on Measurements Relevant for DUNE</strong>, a talk by Will Flanagan, Workshop for the Next Generation Nucleon Decay and Neutrino Detector (NNN15), October 28, 2015.</li>
+              <li>[12] <strong>Latest Results from MINOS and MINOS+</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, Lake Louise Winter Institute, February 11 2016.</li>
+              <li>[13] <strong>MINOS and MINOS+ Results</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, The 2017 Tamura Symposium on Lepton and Baryon Symmetry, May 9, 2017.</li>
+              <li>[14] <strong>Latest Results from MINOS and MINOS+</strong>, a talk by Will Flanagan, on behalf of the MINOS+ Collaboration, XIth International Conference on Interconnections between Particle Physics and Cosmology (PPC 2017), May 23, 2017.</li>
+              <li>[15] <strong>Big Data and Dynamic Pricing</strong>, a seminar by Junting Huang (Perfect Price, Inc.), Department of Physics, University of Texas at Austin, January 30, 2017.</li>
+              <li>[16] <strong>MINOS+ Update</strong>, presentation by K. Lang, the Program Advisory Committee of Fermi National Accelerator Laboratory, Gleacher Center, Chicago, June 23, 2015.</li>
+              <li>[17] <strong>Neutrino Oscillation Experiments</strong>, lecture by K. Lang, The Summer School of Particle and Astroparticle Physics of Annecy-le-Vieux, Annecy-le-Vieux, France, 16-22 July, 2015.</li>
+              <li>[18] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, Colloquium, Department of Physics, University of Athens, Athens, Greece, March 30, 2015.</li>
+              <li>[19] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, CPF seminar, Department of Physics, University of Texas at Austin, April 27, 2015.</li>
+              <li>[20] <strong>Future prospects for measurements of mass hierarchy and CP violation</strong>, K. Lang, CPF seminar, Department of Physics, University of Texas at Austin, April 20, 2015.</li>
+              <li>[21] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, APC, University of Paris VI, Paris, France, April 8, 2015.</li>
+              <li>[22] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, LAL Orsay, France, April 7, 2015.</li>
+              <li>[23] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, LAPP, Annecy-Le-Vieux, France, April 3, 2015.</li>
+              <li>[24] <strong>Neutrino Oscillations Experiments: (Necessarily) Selected topics (i.e., an abbreviated story)</strong>, K. Lang, Society of Physics Students meeting, UT Austin, November 8, 2015.</li>
+              <li>[25] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, seminar at the University of Osaka, Japan, December 21, 2016.</li>
+              <li>[26] <strong>MINOS+: Update and Plans</strong>, K. Lang, Presentation at the Fermilab Program Advisory Committee, Fermilab, January 20, 2016.</li>
+              <li>[27] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, seminar at the Kamioka Laboratory, Japan, March 7, 2016.</li>
+              <li>[28] <strong>Cheap as CHIPS: Large water Cherenkov detectors: faster and cheaper</strong>, K. Lang, seminar at the University of Kyoto, Japan, March 11, 2016.</li>
+              <li>[29] <strong>Neutrinos – Everything you want to know about neutrinos or could have asked if you knew what to ask! (a necessarily abbreviated story)</strong>, K. Lang, “Pizza seminar</strong>, UT Austin, November 29, 2016.</li>
+              <li>[30] <strong>Welcome</strong>, and <strong>Closing Remarks</strong>, K. Lang, organizer’s remarks at The 2017 Tamura Symposium: Lepton and Baryon Symmetry, University of Texas at Austin, Austin, TX 78712, May 8-9, 2017.</li>
+              <li>[31] <strong>The Osaka lectures on neutrinos</strong>, K. Lang, a series of 10 seminars based on lectures at the Osaka University, UT Austin, Spring 2017 semester.</li>
+              <li>[32] <strong>Opening remarks</strong>, K. Lang, opening remarks at the Viet Nus 2017: <strong>Neutrinos – Challenges and Limitations</strong>, The 14th Rencontres du Vietnam, ICISE, Quy Nhon, Vietnam, July 10, 2017.</li>
+              <li>[33] <strong>Future background as a new signal: Introducing the MINER project - a reactor experiment under development</strong>, K. Lang, a VietNus 2017 brief on the MINER experiment, Viet Nus 2017: Neutrinos: challenges and limitations, The 14th Rencontres
                 du Vietnam, ICISE, Quy Nhon, Vietnam, July 20, 2017.</li>
-              <li><strong>Particle Radiation Detectors (Basic Elements)</strong>, K. Lang, Vietnam School on Neutrinos, ICISE, Quy Nhon, Vietnam, July 19-20, 2017.</li>
+              <li>[34] <strong>Particle Radiation Detectors (Basic Elements)</strong>, K. Lang, Vietnam School on Neutrinos, ICISE, Quy Nhon, Vietnam, July 19-20, 2017.</li>
             </ul>
           </div>
         </div>
