@@ -3656,7 +3656,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  max-height: 340px;
+  max-height: 400px;
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
@@ -3790,10 +3790,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-nav > li {
-  font-size: 150%;
+  font-size: 1.5vw;
   height: 60px;
-  width: 150px;
+  width: 12vw;
   outline: 0;
+  text-align: left;
+  display: inline-block;
 }
 
 .navbar-nav > li:hover {
