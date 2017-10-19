@@ -41,7 +41,7 @@
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <!-- CHECK ELEMENT IN VIEWPORT OR NOR SCRIPT -->
-  <!--- Dungy's script (bug: previous button's state is not changed when scroll down) -->
+  <!--- Dungy's script -->
   <script>
   var sectionIDs = ["#about", "#about-team", "#publication-sec", "#resources-sec", "#contact-sec"];
   var navbarItemIDs = ["#navbar-nav-item-about", "#navbar-nav-item-about-team", "#navbar-nav-item-publication-sec", "#navbar-nav-item-resources-sec", "#navbar-nav-item-contact-sec"];
@@ -78,13 +78,6 @@
   }, 100);
   </script>
 
-  <!-- $(navbarItemIDs[i]).addClass("navbar-nav-li-active");
-  for (j = 0; j < sectionIDs.length; j++) {
-    if (j != i) {
-      $(navbarItemIDs[i]).removeClass("navbar-nav-li-active");
-    }
-  } -->
-
 </head>
 
 <body>
@@ -116,7 +109,8 @@
       <!-- Collect the nav links for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li id="navbar-nav-item-home" style="width:55px;"><a href="#home"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:0vw;width:80px;text-align:left;"></i></a>
+          <!-- <li id="navbar-nav-item-home"><a href="#home"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:0vw;width:80px;text-align:left;"></i></a> -->
+          <li id="navbar-nav-item-home"><a href="#home" style="font-weight:bold;">Home</i></a>
           </li>
           <li id="navbar-nav-item-about"><a href="#about" style="font-weight:bold;">Research</a>
           </li>
@@ -235,11 +229,11 @@
                   <div class="service-div color-white g-pad-bottom" style="height:80vw;">
                     <h2 style="font-weight:bold; font-size: 2vw;"> Sterile Neutrinos Search with MINOS, Daya Bay, and Bugey-3 </h2>
                     <img src="assets/img/selectedWork.png" style="max-width:50%;" align="left" />
-                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2vw;">
+                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2.5vw;">
                       <br/> Searches for a light sterile neutrino have been performed independently by the MINOS and the Daya Bay experiments using the muon (anti)neutrino and electron antineutrino disappearance channels, respectively. In this Letter, results from both experiments are combined with those from the Bugey-3 reactor neutrino experiment to constrain oscillations into light sterile neutrinos. The three experiments are sensitive to complementary regions of parameter space, enabling the combined analysis to probe regions allowed by the LSND and MiniBooNE experiments in a minimally extended four-neutrino flavor framework. Stringent limits on \(\sin^2 2\theta_{\mu e}\) are set over 6 orders of magnitude in the sterile mass-squared splitting \(\Delta m^2_{41}\). The sterile-neutrino mixing phase space allowed by the LSND and MiniBooNE experiments is excluded for \(\sin^2 2\theta_{\mu e}
                       < 0.8~\text{eV}^2\) at $95\%~\text{CL}_s$. [Abstract taken from <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.117.151801">Phys. Rev. Lett. 117, 151801</a>.]
                     </p>
-                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2vw;">
+                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2.5vw;">
                       MINOS and Daya Bay/Bugey-3 combined $90\%~\text{CL}_s$ limit on $\sin^{2}2\theta_{\mu e}$ compared to the LSND and MiniBooNE $90\%~\text{C.L.}$ allowed regions. Regions of parameter space to the right of the red contour are excluded. The regions excluded at $90\%~\text{C.L.}$ by KARMEN2 and NOMAD are also shown. We note that the excursion to small mixing in the exclusion contour at around $\Delta m^{2}_{41} \sim 5 \times 10^{-3}~\text{eV}^{2}$ is due to the degenerate island in the MINOS exclusion limit. Also shown are the $90\%~\text{C.L.}$ allowed regions of two global fits. The Kopp et al. 2013 fit included $\nu_{e}$ appearance experiments, and the Gariazzo et al. 2016 fit included all short-baseline experiments with the exception of MiniBooNE data below $475~\text{MeV}$.
                     </p>
                   </div>
@@ -255,13 +249,13 @@
                   <div class="service-div color-white g-pad-bottom" style="height:80vw;">
                     <h2 style="font-weight:bold; font-size: 2vw;">Large Extra Dimensions Search in MINOS</h2>
                     <img src="assets/img/researchPlots/minos_led/PlotFCContour_linx.png" style="max-width:55%; padding-top: 25px; padding-bottom: 5px; padding-left:25px;padding-right:35px;" align="right" />
-                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2vw;">
+                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2.5vw;">
                       <br /> We report new constraints on the size of large extra dimensions from data collected by the MINOS experiment between 2005 and 2012. Our analysis employs a model in which sterile neutrinos arise as Kaluza-Klein states in large extra
                       dimensions and thus modify the neutrino oscillation probabilities due to mixing between active and sterile neutrino states. Using Fermilab's NuMI beam exposure of $10.56 \times 10^{20}$ protons-on-target, we combine muon neutrino chargedx
                       current and neutral current data sets from the Near and Far Detectors and observe no evidence for deviations from standard three-flavor neutrino oscillations. The ratios of reconstructed energy spectra in the two detectors constrain the
                       size of large extra dimensions to be smaller than $0.45~\mu\text{m}$ at $90\%~\text{C.L.}$ in the limit of a vanishing lightest active neutrino mass. Stronger limits are obtained for non-vanishing masses. [Abstract taken from <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.94.111101">Phys. Rev. D 94, 111101(R)</a>.]
                     </p>
-                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2vw;">
+                    <p align="justify" style="padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2.5vw;">
                       Comparison of the $90\%~\text{C.L.}$ data contour for the LED model, obtained using the Feldman-Cousins technique, based on $10.56\times10^{20}$ POT MINOS data and the contour obtained when adding $5.80 \times10^{20}$ POT MINOS+ data. Only normal mass
                       ordering was assumed in the fit. The large extra dimension size and the smallest neutrino mass are denoted as $R$ and $m_0$, respectively. The shaded area indicates the excluded region to the right of the contour. In the limit of vanishing
                       $m_0$, the large extra dimension size is constrained to be smaller than $0.45\,\mu\text{m}$ at $90\%~\text{C.L.}$ by the MINOS dataset and $0.17\,\mu\text{m}$ at $90\%~\text{C.L.}$ by the MINOS/MINOS+ combined dataset.
@@ -358,6 +352,8 @@
           </div>
         </div>
 
+        </br>
+
         <div class="col-md-12 g-pad-bottom">
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="team-member">
@@ -384,6 +380,8 @@
             </div>
           </div>
         </div>
+
+        </br>
 
         <div class="col-md-12 g-pad-bottom">
           <div class="col-md-3 col-sm-3 col-xs-6">
@@ -412,6 +410,8 @@
           </div>
         </div>
 
+        </br>
+
         <div class="col-md-12 g-pad-bottom">
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="team-member">
@@ -421,6 +421,7 @@
           </div>
         </div>
 
+        </br>
 
       </div>
 
@@ -460,6 +461,8 @@
           </div>
         </div>
 
+        </br>
+
         <div class="col-md-12 g-pad-bottom">
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="team-member">
@@ -487,7 +490,7 @@
           </div>
         </div>
 
-        <div class="col-md-12 g-pad-bottom">
+        <div class="col-sm-12 g-pad-bottom">
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="team-member">
               <img src="assets/img/team.png" alt="">
@@ -501,6 +504,8 @@
             </div>
           </div>
         </div>
+
+        </br>
 
       </div>
     </div>

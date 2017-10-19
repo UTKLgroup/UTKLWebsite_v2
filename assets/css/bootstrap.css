@@ -3790,11 +3790,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-nav > li {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   height: 60px;
   width: 12vw;
   outline: 0;
-  text-align: left;
+  text-align: center;
   display: inline-block;
 }
 
@@ -5561,8 +5561,8 @@ button.close {
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: 0px;
   text-indent: -999px;
   cursor: pointer;
@@ -5572,8 +5572,8 @@ button.close {
   border-radius: 10px;
 }
 .carousel-indicators .active {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: 0;
   background-color: #fff;
 }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>UTKL Research Group</title>
+  <!--REQUIRED STYLE SHEETS-->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
+  <!-- BOOTSTRAP CORE STYLE CSS -->
+  <link href="assets/flags/css/flag-icon.css" rel="stylesheet" />
+  <!-- BOOTSTRAP CORE STYLE CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <!-- FONTAWESOME STYLE CSS -->
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- VEGAS STYLE CSS -->
+  <link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
+  <!-- CUSTOM STYLE CSS -->
+  <link href="assets/css/nuosc_style.css" rel="stylesheet" />
+  <!-- GOOGLE FONT -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <style>
+      #drop-cap::first-letter {
+        float: left;
+        font-size: 85px;
+        line-height: 1;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        margin-right: 9px;
+      }
+    </style>
+
+  <!-- Adding MathJax to show mathematical formula -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <!-- CHECK ELEMENT IN VIEWPORT OR NOR SCRIPT -->
+  <!--- Dungy's script (bug: previous button's state is not changed when scroll down) -->
+  <script>
+  var sectionIDs = ["#minos-rnd", "#sipm", "#muon-telescope"];
+  var navbarItemIDs = ["#navbar-nav-item-minos-rnd", "#navbar-nav-item-sipm", "#navbar-nav-item-muon-telescope"];
+  var list = [];
+  var previousHighlightedID = -1;
+  var currentHighlightedID = -1;
+  setInterval(function() {
+    for (i = 0; i < sectionIDs.length; i++) {
+      if ($(sectionIDs[i]).isOnScreen(
+        function(deltas){
+          return deltas.top >= 400 && deltas.bottom >= 400;
+        }
+      )) {
+        list.push(i);
+      }
+    }
+    if (list.length == 1) {
+      currentHighlightedID = list[0];
+    } else if (list.length == 2) {
+      currentHighlightedID = list[0];
+    } else {
+      currentHighlightedID = list[1];
+    }
+
+    for (i = 0; i < sectionIDs.length; i++) {
+      list.shift();
+    }
+
+    if (currentHighlightedID != previousHighlightedID) {
+      $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
+      $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
+      previousHighlightedID = currentHighlightedID;
+    }
+  }, 100);
+  </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar-inverse" role="navigation" style="position:fixed;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+      </div>
+      <!-- Collect the nav links for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li id="navbar-nav-item-home"><a href="index.html" style="font-weight:bold;">Home</a>
+          </li>
+          <li id="navbar-nav-item-minos-rnd"><a href="#minos-rnd" style="font-weight:bold;">MINOS</a>
+          </li>
+          <li id="navbar-nav-item-sipm"><a href="#sipm" style="font-weight:bold;">SiPM FEB</a>
+          </li>
+          <li id="navbar-nav-item-muon-telescope"><a href="#muon-telescope" style="font-weight:bold;">\(\mu\)-Telescope</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!--End Navigation -->
+
+
+  <!-- MINOS RnD Section -->
+  <section class="for-full-back color-white" id="minos-rnd">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 style="font-weight:bold;">MINOS Detector R\(\&\)D</h1>
+        </div>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+
+        <div class="col-md-12">
+          <h4>
+            <p align="justify" style="padding-left:50px; padding-right:50px;">Neutrino oscillations are a quantum mechanical phenomenon whereby a neutrino created with a specific lepton flavor (electron, muon, or tau) can later be measured to have a different flavor. The probability of measuring a particular flavor for a neutrino varies periodically as it propagates through space, depending both on the energy of the neutrino and the distance it traveled.</p>
+            <p align="justify" style="padding-left:50px; padding-right:50px;">Learn about neutrino oscillations and how we study this phenomenon in MINOS/MINOS+ and NOvA. We also participate in simulation efforts for the future DUNE experiment.</p>
+          </h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--End MINOS RnD Section -->
+
+  <!-- MINOS RnD Section -->
+  <section class="for-full-back color-dark" id="sipm">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 style="font-weight:bold; color:white;">SiPM Frontend R\(\&\)D</h1>
+        </div>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+
+        <div class="col-md-12">
+          <h4>
+            <p align="justify" style="padding-left:50px; padding-right:50px;color:white;">Neutrino oscillations are a quantum mechanical phenomenon whereby a neutrino created with a specific lepton flavor (electron, muon, or tau) can later be measured to have a different flavor. The probability of measuring a particular flavor for a neutrino varies periodically as it propagates through space, depending both on the energy of the neutrino and the distance it traveled.</p>
+            <p align="justify" style="padding-left:50px; padding-right:50px;color:white;">Learn about neutrino oscillations and how we study this phenomenon in MINOS/MINOS+ and NOvA. We also participate in simulation efforts for the future DUNE experiment.</p>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End MINOS RnD Section -->
+
+  <!-- Muon Telescope Section -->
+  <section class="for-full-back color-white " id="muon-telescope">
+    <div class="container">
+      <div class="row text-center">
+
+        <div class="col-md-12">
+          <h1 style="font-weight:bold;">Muon Telescope</h1>
+        </div>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+
+        <div class="col-md-12">
+          <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+            There are two possible geometries under consideration for the far detectors 10 metric-kiloton liquid argon TPCs. They are denoted with the names Single Phase, see <a href="#dune_fig_2">Fig. 1</a>, and Dual Phase geometry, see <a href="#dune_fig_3">Fig. 2</a>, which refer to the amount of matter states of the filling scintillator material, in this case: argon. The Single Phase geometry would only contain liquid argon and the Dual Phase would have mainly liquid argon but also some argon in gas form at the top of the detector.
+          </h4>
+        </div>
+
+        <div class="col-md-12">
+          <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+            There are two possible geometries under consideration for the far detectors 10 metric-kiloton liquid argon TPCs. They are denoted with the names Single Phase, see <a href="#dune_fig_2">Fig. 1</a>, and Dual Phase geometry, see <a href="#dune_fig_3">Fig. 2</a>, which refer to the amount of matter states of the filling scintillator material, in this case: argon. The Single Phase geometry would only contain liquid argon and the Dual Phase would have mainly liquid argon but also some argon in gas form at the top of the detector.
+          </h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Muon Telescope Section -->
+
+  <!--footer Section -->
+  <div class="for-full-back" id="footer" style="padding-bottom:10px;">
+    <p align="center"><a href="https://www.utexas.edu"><img src="assets/img/ut_logo.png" width="20%" style="margin-bottom:-20px;"></a></p>
+    <p style="color:#ed7900;font-size:120%;margin-bottom:-20px;" align="center">Copyright &copy; 2017 UTKL Research Group.</p>
+    <p style="color:#ffffff;font-size:80%;margin-bottom:-10px;" align="center">
+      This website is developed using <a href="http://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>, <a href="http://fontawesome.io/">font-awesome</a> and <a href="http://www.dafont.com/geobats.font">geobats</a>.
+    </p>
+  </div>
+
+  <!--End footer Section -->
+  <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+  <!-- CORE JQUERY  -->
+  <script src="assets/plugins/jquery-1.10.2.js"></script>
+  <!-- BOOTSTRAP CORE SCRIPT   -->
+  <script src="assets/plugins/bootstrap.js"></script>
+  <!-- CUSTOM SCRIPTS -->
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
