@@ -82,7 +82,7 @@ p {
   /* Safari 1.x */
   -khtml-opacity: 0.95;
   /* Good browsers */
-  opacity: 1;
+  opacity: 0.95;
 }
 
 section {
