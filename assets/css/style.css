@@ -78,11 +78,11 @@ p {
   /* IE 5-7 */
   filter: alpha(opacity=95);
   /* Netscape */
-  -moz-opacity: 0.95;
+  -moz-opacity: 1;
   /* Safari 1.x */
-  -khtml-opacity: 0.95;
+  -khtml-opacity: 1;
   /* Good browsers */
-  opacity: 0.95;
+  opacity: 1;
 }
 
 section {
