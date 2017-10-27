@@ -7,107 +7,107 @@
 <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!--[if IE]>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-  <title>UTKL Research Group</title>
-  <!--REQUIRED STYLE SHEETS-->
-  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
-  <!-- BOOTSTRAP CORE STYLE CSS -->
-  <link href="assets/flags/css/flag-icon.css" rel="stylesheet" />
-  <!-- BOOTSTRAP CORE STYLE CSS -->
-  <link href="assets/css/nuosc_bootstrap.css" rel="stylesheet" />
-  <!-- FONTAWESOME STYLE CSS -->
-  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <!-- VEGAS STYLE CSS -->
-  <link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
-  <!-- CUSTOM STYLE CSS -->
-  <link href="assets/css/nuosc_style.css" rel="stylesheet" />
-  <!-- GOOGLE FONT -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
+    <title>UTKL Research Group</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/flags/css/flag-icon.css" rel="stylesheet" />
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/nuosc_bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- VEGAS STYLE CSS -->
+    <link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/nuosc_style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <style>
-      #drop-cap::first-letter {
-        float: left;
-        font-size: 85px;
-        line-height: 1;
-        font-family: "Times New Roman", Times, serif;
-        font-weight: bold;
-        margin-right: 9px;
-      }
+        #drop-cap::first-letter {
+            float: left;
+            font-size: 85px;
+            line-height: 1;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            margin-right: 9px;
+        }
     </style>
 
-  <!-- Adding MathJax to show mathematical formula -->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- Adding MathJax to show mathematical formula -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-  <!-- CHECK ELEMENT IN VIEWPORT OR NOR SCRIPT -->
-  <!--- Dungy's script (bug: previous button's state is not changed when scroll down) -->
-  <script>
-  var sectionIDs = ["#minos", "#nova", "#dune"];
-  var navbarItemIDs = ["#navbar-nav-item-minos", "#navbar-nav-item-nova", "#navbar-nav-item-dune"];
-  var list = [];
-  var previousHighlightedID = -1;
-  var currentHighlightedID = -1;
-  setInterval(function() {
-    for (i = 0; i < sectionIDs.length; i++) {
-      if ($(sectionIDs[i]).isOnScreen(
-        function(deltas){
-          return deltas.top >= 400 && deltas.bottom >= 400;
-        }
-      )) {
-        list.push(i);
-      }
-    }
-    if (list.length == 1) {
-      currentHighlightedID = list[0];
-    } else if (list.length == 2) {
-      currentHighlightedID = list[0];
-    } else {
-      currentHighlightedID = list[1];
-    }
+    <!-- CHECK ELEMENT IN VIEWPORT OR NOR SCRIPT -->
+    <!--- Dungy's script (bug: previous button's state is not changed when scroll down) -->
+    <script>
+        var sectionIDs = ["#minos", "#nova", "#dune"];
+        var navbarItemIDs = ["#navbar-nav-item-minos", "#navbar-nav-item-nova", "#navbar-nav-item-dune"];
+        var list = [];
+        var previousHighlightedID = -1;
+        var currentHighlightedID = -1;
+        setInterval(function() {
+            for (i = 0; i < sectionIDs.length; i++) {
+                if ($(sectionIDs[i]).isOnScreen(
+                        function(deltas) {
+                            return deltas.top >= 400 && deltas.bottom >= 400;
+                        }
+                    )) {
+                    list.push(i);
+                }
+            }
+            if (list.length == 1) {
+                currentHighlightedID = list[0];
+            } else if (list.length == 2) {
+                currentHighlightedID = list[0];
+            } else {
+                currentHighlightedID = list[1];
+            }
 
-    for (i = 0; i < sectionIDs.length; i++) {
-      list.shift();
-    }
+            for (i = 0; i < sectionIDs.length; i++) {
+                list.shift();
+            }
 
-    if (currentHighlightedID != previousHighlightedID) {
-      $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
-      $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
-      previousHighlightedID = currentHighlightedID;
-    }
-  }, 100);
-  </script>
+            if (currentHighlightedID != previousHighlightedID) {
+                $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
+                $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
+                previousHighlightedID = currentHighlightedID;
+            }
+        }, 100);
+    </script>
 
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar-inverse" role="navigation" style="position:fixed;">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <!-- Navigation -->
+    <nav class="navbar-inverse" role="navigation" style="position:fixed;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-      </div>
-      <!-- Collect the nav links for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <!-- <li id="navbar-nav-item-home"><a href="index.html"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:5px;width:80px;text-align:left;"></i></a>
+            </div>
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- <li id="navbar-nav-item-home"><a href="index.html"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:5px;width:80px;text-align:left;"></i></a>
           </li>
           <li id="navbar-nav-item-stdosc"><a href="#stdosc" style="font-weight:bold;">3-Flavor</a>
           </li>
@@ -116,38 +116,38 @@
           <li id="navbar-nav-item-led"><a href="#led" style="font-weight:bold;">LED</a>
           </li>
           -->
-          <li id="navbar-nav-item-home"><a href="index.html" style="font-weight:bold;">Home</a>
-          </li>
-          <li id="navbar-nav-item-minos"><a href="#minos" style="font-weight:bold;">MINOS/MINOS+</a>
-          </li>
-          <li id="navbar-nav-item-nova"><a href="#nova" style="font-weight:bold;">NOvA</a>
-          </li>
-          <li id="navbar-nav-item-dune"><a href="#dune" style="font-weight:bold;">DUNE</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!--End Navigation -->
+                    <li id="navbar-nav-item-home"><a href="index.html" style="font-weight:bold;">Home</a>
+                    </li>
+                    <li id="navbar-nav-item-minos"><a href="#minos" style="font-weight:bold;">MINOS/MINOS+</a>
+                    </li>
+                    <li id="navbar-nav-item-nova"><a href="#nova" style="font-weight:bold;">NOvA</a>
+                    </li>
+                    <li id="navbar-nav-item-dune"><a href="#dune" style="font-weight:bold;">DUNE</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--End Navigation -->
 
 
-  <!-- NuOsc Intro Section -->
-  <section class="for-full-back color-white">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">Neutrino Oscillations</h1>
-          </br>
-          </br>
-          </br>
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px;">Neutrino oscillations are a quantum mechanical phenomenon whereby a neutrino created with a specific lepton flavor (electron, muon, or tau) can later be measured to have a different flavor. The probability of measuring a particular flavor for a neutrino varies periodically as it propagates through space, depending both on the energy of the neutrino and the distance it traveled.</p>
-            <p align="justify" style="padding-left:50px; padding-right:50px;">Learn about neutrino oscillations and how we study this phenomenon in MINOS/MINOS+ and NOvA. We also participate in simulation efforts for the future DUNE experiment.</p>
-          </h4>
+    <!-- NuOsc Intro Section -->
+    <section class="for-full-back color-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="font-weight:bold;">Neutrino Oscillations</h1>
+                    </br>
+                    </br>
+                    </br>
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px;">Neutrino oscillations are a quantum mechanical phenomenon whereby a neutrino created with a specific lepton flavor (electron, muon, or tau) can later be measured to have a different flavor. The probability of measuring a particular flavor for a neutrino varies periodically as it propagates through space, depending both on the energy of the neutrino and the distance it traveled.</p>
+                        <p align="justify" style="padding-left:50px; padding-right:50px;">Learn about neutrino oscillations and how we study this phenomenon in MINOS/MINOS+ and NOvA. We also participate in simulation efforts for the future DUNE experiment.</p>
+                    </h4>
 
-          <!--
+                    <!--
           <div id="selected-work-carousel" class="carousel slide" data-ride="carousel">
             <div style="height:600px;width:300px;position:absolute;right:-110px;" href="#selected-work-carousel" data-slide="next">
             </div>
@@ -229,863 +229,1032 @@
           </div>
         -->
 
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End NuOsc Introduction Section -->
-
-  <!-- MINOS Intro Section -->
-  <section class="for-full-back color-dark" id="minos">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="color:white;">MINOS/MINOS+</h1>
-          <h1><img src="assets/img/researchPlots/MINOSpng/MinosPlusLogo.png" style="max-height:300px;"/></h1>
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;"><span style="font-weight:bold;">MINOS</span> or <span style="font-weight:bold;">M</span>ain <span style="font-weight:bold;">I</span>njector <span style="font-weight:bold;">N</span>eutrino <span style="font-weight:bold;">O</span>scillation <span style="font-weight:bold;">S</span>earch was an on-axis long-baseline neutrino oscillation experiment that was exposed to the the NuMI neutrino beam from Fermilab. It used a Near Detector (ND) with a mass of 0.98\(~\) metric-kiloton located 1.04\(~\)km from the NuMI target and a Far Detector (FD) with a mass of 5.4\(~\) metric-kiloton located 735\(~\)km from the target in the Soudan Underground Mine. These detectors were functionally equivalent magnetized steel-scintillator, tracking-sampling calorimeters. The detectors consisted of alternating planes of 2.54\(~\)cm thick steel plates and 1\(~\)cm thick polystyrene-based (plastic) scintillator strips. The scintillation light resulting from particle interactions, following the initial neutrino interaction was collected and guided by wavelength-shifting (WLS) fibers to photomultipliers (PMTs). The PMT signals were used to determine the flavor and energy of the interacting neutrino. Each detector was magnetized by a coil that ran through the center of the detector, parallel to its length. The magnetic field allowed the MINOS detectors to distinguish between \(\nu_\mu\) and \(\overline{\nu}_\mu\) charged-current (CC) interactions based on the curvature of the resulting muon. The ND was used to monitor the neutrino beam before significant neutrino oscillations take place. The FD was used to measure the deficit in neutrino events due to oscillations occurring along the way from Fermilab to Soudan, a trip that takes less than 3 milliseconds for these neutrinos. <a href="#minos-detector-carousel">Fig. 1</a> illustrates the basic design of MINOS detectors.</p>
-          </h4>
-        </div>
-        <div class="col-md-12">
-          <div id="minos-detector-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators RIGHT -->
-            <div style="height:600px;width:300px;position:absolute;right:80px; z-index:100;" href="#minos-detector-carousel" data-slide="next">
+                </div>
             </div>
-            <!-- Indicators LEFT -->
-            <div style="height:600px;width:300px;position:absolute;left:80px; z-index:100;" href="#minos-detector-carousel" data-slide="prev">
-            </div>
-            <!-- Indicators -->
-            <ol class="carousel-indicators" style="z-index:1000;">
-              <li data-target="#minos-detector-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="1"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="2"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="3"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="4"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="5"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="6"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="7"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="8"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="9"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="10"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="11"></li>
-              <li data-target="#minos-detector-carousel" data-slide-to="12"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox" style="z-index:1;">
-
-              <div class="item active">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS1.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS2.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS3.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS4.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS5.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS6.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS7.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS8.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS9.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS10.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS11.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS12.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- New item -->
-              <div class="item">
-                <div class="row text-center ">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white " style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/MINOSpng/MINOS13.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div> <!-- End wrapper -->
-            <div class="col-md-8 col-md-offset-2">
-              <p align="justify" style="padding-left:50px; padding-right:50px; color:white;" >Figure 1: Flip through the images, by clicking on the left or the right of each figure or using the indicator located on top, to learn more about the MINOS detectors.</p>
-            </div>
-          </div> <!-- div col-md-12 -->
         </div>
+    </section>
+    <!--End NuOsc Introduction Section -->
 
-        <div class="col-md-12">
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The NuMI beam is produced by colliding 120\(~\)GeV protons into a graphite target. The resulting pions and kaons are then focused by two magnetic horns into a decay pipe, where they decay into muon (anti)neutrinos. The magnetic horns allow the beam to be operated in either a \(\nu_\mu\) or \(\overline{\nu}_\mu\) mode, as shown in <a href="#numibeam">Fig. 2</a>. In June 2016 the NuMI beam achieved a beam power of 700\(~\)kW making it the most powerful neutrino beamline, currently used for the NO$\nu$A experiment (see below).</p>
-          </h4>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-          <div class="service-div color-white">
-            <img src="assets/img/researchPlots/MINOSpng/FHC.png" style="max-width:850px;width:80vw;" id="numibeam"/>
-            <img src="assets/img/researchPlots/MINOSpng/RHC.png" style="max-width:850px;width:80vw;"/>
-          </div>
-        </div>
-
-        <div class="col-md-8 col-md-offset-2">
-          <p align="justify" style="padding-left:50px; padding-right:50px; color:white;"> Figure 2: Creating a muon neutrino (top) or antineutrino (bottom) beam with NuMI. Positive and negative pions and kaons resulting from protons interacting with the NuMI target are either focused or defocused by the magnetic horns, depending on the direction of the current running through the horns. When positive pions and kaons are focused into the decay pipe, their decays lead to a neutrino beam dominated by muon neutrinos. Focusing negative pions and kaons leads to a neutrino beam dominated by muon antineutrinos.</p>
-        </div>
-
-        <div class="col-md-12">
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The MINOS experiment was operational between July 2003 and April 2012, detecting neutrinos from the NuMI neutrino beam with a peak neutrino energy of about 3\(~\)GeV. MINOS was continued by MINOS+, which collected data between October 2013 and June 2016, using a NuMI neutrino beam with a peak neutrino energy shifted to about 7\(~\)GeV. This shift to higher energies away from the three-flavor oscillation maximum around 1.5\(~\)GeV increased the sensitivity to neutrino oscillation models beyond the three-flavor paradigm, including sterile neutrinos, large extra dimensions, and non-standard interactions.</p>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The UTKL Research Group has been active on all fronts in the MINOS and MINOS+ Experiments, from detector R\(\&\)D, data acquisition, service work, and simulation, to data analysis. Currently we are analyzing the final MINOS+ data.</p>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Find out more about the <a href="#stdosc">Three-Flavor</a>, <a href="#sterile">Four-Flavor</a>, and <a href="#led">Large Extra Dimensions</a> searches in MINOS/MINOS+ below or visit the <a href="http://www-numi.fnal.gov/index.html" target="_blank">MINOS website</a>.</p>
-          </h4>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!--End MINOS Introduction Section -->
-
-  <!-- Standard Osc Intro Section -->
-  <section class="for-full-back color-white" id="stdosc">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">Three-Flavor Oscillations</h1>
-        </div>
-
-        <div class="col-md-12">
-          <br/>
-          <br/>
-          <br/>
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px;">The mixing of three neutrino states is experimentally well established by many experiments, including MINOS and MINOS+. This mixing is described by the \(3 \times 3\) Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix which can be parameterized by three mixing angles \(\theta_{12}\), \(\theta_{23}\), \(\theta_{13}\), and a CP violating phase \(\delta\). The oscillation probabilities can be expressed such that they additionally depend on two mass-splittings \(\Delta m^2_{21}\) and \(\Delta m^2_{32}\) where \(\Delta m^2_{ij} = m^2_i - m^2_j\), see <a href="#ThreeFlavorFig1">Fig 1</a>. MINOS and MINOS+ have made precision measurements of the three-flavor atmospheric oscillation parameters \(\Delta m^2_{32}\) and \(\theta_{23}\), see <a href="#ThreeFlavorFig2">Fig 2</a>.</p>
-          </h4>
-        </div>
-
-        <div class="col-md-12">
-          <h4>
-            <img src="assets/img/researchPlots/MINOSpng/ThreeFlavor.png" style="max-width:850px;width:80vw; align:left" id="ThreeFlavorFig1"/>
-          </h4>
-        </div>
-
-        <div class="col-md-8 col-md-offset-2">
-          <p align="justify" style="padding-left:50px; padding-right:50px;">Figure 1: Measuring the atmospheric neutrino oscillation parameters \(\Delta m^2_{32}\) and \(\theta_{23}\) with MINOS. (Left) In the three-flavor paradigm, the muon neutrino disappearance along the MINOS FD baseline is determined by the mass-splitting \(\Delta m^2_{32}\) and the mixing angle \(\theta_{23}\). (Right) The top figure compares the number of muon neutrino events measured by MINOS as a function of neutrino energy (black points) to the number of events predicted by the three-flavor model if there would be no oscillations (grey line) and the number of events predicted by the three-flavor model that agrees best with the MINOS data (red line). The bottom plot takes the ratio of the data and best prediction to the prediction of no oscillations, which is equivalent to the muon neutrino disappearance probability in the FD. The position of the minimum around 1.5\(~\)GeV depends on the magnitude of \(\Delta m^2_{32}\), while the depth of the minimum is approximately set by \(\sin^2 \theta_{23}\).</p>
-        </div>
-
-        <div class="col-md-12">
-          <h4>
-            <img src="assets/img/researchPlots/MINOSpng/ThreeFlavorSpectra.png" style="max-width:400px;width:35vw; align:left" id="ThreeFlavorFig2"/>
-            <img src="assets/img/researchPlots/MINOSpng/ThreeFlavorPanel.png" style="max-width:400px;width:35vw; align:right"/>
-          </h4>
-        </div>
-
-        <div class="col-md-8 col-md-offset-2">
-          <p align="justify" style="padding-left:50px; padding-right:50px;">Figure 2: Preliminary results from MINOS/MINOS+ for the Three-Flavor search. (Left) Comparison of the measured muon neutrino events as a function of neutrino energy for MINOS and the first two years of MINOS+ data (black points) to the three-flavor prediction without oscillations (red line) and the three-flavor predictions that agrees best with the data (blue line). The best prediction is broken down into its MINOS and MINOS+ contributions, showing the increase in number of neutrino events at higher energies in MINOS+. (Right) The left panels show the 68\(\%\) and 90\(\%\) confidence limits in the (\(\Delta m^{2}_{32}\), \(\sin^{2}\theta_{23}\)) plane calculated for normal mass ordering (top) and inverted mass ordering (bottom). The right panels show log-likelihood profiles for each ordering plotted for \(\Delta{m}^{2}_{32}\) (top right) and \(\sin^{2}\theta_{23}\) (bottom right). The best fit is indicated by the star and occurs in the inverted ordering at \(\Delta m^{2}_{32} = -2.70 \times 10^{-3}\) eV\(^{2}\) and \(\sin^{2}\theta_{23} = 0.69\). Also shown is the MINOS PRL 112, 191801 (2014) best fit at \(\Delta m^{2}_{32} = -2.41 \times 10^{-3}\), eV\(^{2}\) and \(\sin^{2}\theta_{23} = 0.41\).</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!--End Standard Osc Introduction Section -->
-
-
-  <!-- Sterile Neutrinos Section -->
-  <section class="for-full-back color-dark" id="sterile">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;color:white">Four-Flavor Oscillations</h1>
-        </div>
-
-        <div class="col-md-12">
-          <br/>
-          <br/>
-          <br/>
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Neutrino oscillations between three neutrino flavors (electron, muon, and tau) are experimentally well established through measurements of solar, atmospheric, nuclear reactor, and accelerator beam neutrinos [<a href="#sterile_ref_1">1</a>] and are consistent with LEP results constraining the number of light neutrinos to three (\(m_{\nu} < \frac{1}{2}m_{\text{Z}} \approx 45\,\text{GeV}\)) through measurements of the invisible part of the \(Z\) boson decay width [<a href="#sterile_ref_2">2</a>]. The three-flavor paradigm is discussed in more detail in <a href="#stdosc">Three-Flavor Oscillations</a>. There are, however, hints for the existence of an additional neutrino flavor. These include the anomalous electron antineutrino appearance in short-baseline muon antineutrino beams at LSND [<a href="#sterile_ref_3">3</a>] and MiniBooNE [<a href="#sterile_ref_4">4</a>], which require a fourth neutrino state corresponding to a mass-splitting scale of about 1 eV\(^2\). Given the LEP measurements, such a neutrino state would not couple through the Standard Model interactions and as such is called a sterile neutrino.</p>
-
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Mixing between the three active neutrinos and the sterile neutrino modifies the three-flavor oscillation probabilities, as illustrated in <a href="#sterile-neutrino-carousel">Fig. 1</a>. The \(3\times3\) matrix describing mixing in the three-flavor paradigm can be extended to a \(4\times4\) matrix to accommodate the fourth neutrino state, as illustrated in <a href="#sterile-neutrino-carousel">Fig. 1</a>. This introduces three additional mixing angles, \(\theta_{14}\), \(\theta_{24}\), and \(\theta_{34}\), as well as two additional charge-parity (CP) violating phases, \(\delta_{14}\) and  \(\delta_{24}\). Furthermore, three new mass-splittings, \(\Delta m^2_{41}\), \(\Delta m^2_{42}\) and \(\Delta m^2_{43}\), enter the oscillation probabilities.</p>
-          </h4>
-        </div>
-
-        <!-- Carousel starts here -->
-        <div class="col-md-12">
-          <div id="sterile-neutrino-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators RIGHT -->
-            <div style="height:600px;width:300px;position:absolute;right:80px; z-index:100;" href="#sterile-neutrino-carousel" data-slide="next">
-            </div>
-            <!-- Indicators LEFT -->
-            <div style="height:600px;width:300px;position:absolute;left:80px; z-index:100;" href="#sterile-neutrino-carousel" data-slide="prev">
-            </div>
-            <!-- Indicators -->
-            <ol class="carousel-indicators" style="z-index:1000;">
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="1"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="2"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="3"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="4"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="5"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="6"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="7"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="8"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="9"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="10"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="11"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="12"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="13"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="14"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="15"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="16"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="17"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="18"></li>
-              <li data-target="#sterile-neutrino-carousel" data-slide-to="19"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox" style="z-index:1;">
-
-              <div class="item active">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile1.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
+    <!-- MINOS Intro Section -->
+    <section class="for-full-back color-dark" id="minos">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="color:white;">MINOS/MINOS+</h1>
+                    <h1><img src="assets/img/researchPlots/MINOSpng/MinosPlusLogo.png" style="max-height:300px;" /></h1>
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;"><span style="font-weight:bold;">MINOS</span> or <span style="font-weight:bold;">M</span>ain <span style="font-weight:bold;">I</span>njector <span style="font-weight:bold;">N</span>eutrino <span style="font-weight:bold;">O</span>scillation <span style="font-weight:bold;">S</span>earch was an on-axis long-baseline neutrino oscillation experiment that was exposed to the the NuMI neutrino beam from Fermilab. It used a Near Detector (ND) with a mass of 0.98\(~\) metric-kiloton located 1.04\(~\)km from the NuMI target and a Far Detector (FD) with a mass of 5.4\(~\) metric-kiloton located 735\(~\)km from the target in the Soudan Underground Mine. These detectors were functionally equivalent magnetized steel-scintillator, tracking-sampling calorimeters. The detectors consisted of alternating planes of 2.54\(~\)cm thick steel plates and 1\(~\)cm thick polystyrene-based (plastic) scintillator strips. The scintillation light resulting from particle interactions, following the initial neutrino interaction was collected and guided by wavelength-shifting (WLS) fibers to photomultipliers (PMTs). The PMT signals were used to determine the flavor and energy of the interacting neutrino. Each detector was magnetized by a coil that ran through the center of the detector, parallel to its length. The magnetic field allowed the MINOS detectors to distinguish between \(\nu_\mu\) and \(\overline{\nu}_\mu\) charged-current (CC) interactions based on the curvature of the resulting muon. The ND was used to monitor the neutrino beam before significant neutrino oscillations take place. The FD was used to measure the deficit in neutrino events due to oscillations occurring along the way from Fermilab to Soudan, a trip that takes less than 3 milliseconds for these neutrinos. <a href="#minos-detector-carousel">Fig. 1</a> and <a href="#minos-readout-carousel">Fig. 2</a> illustrates the basic design of MINOS detectors.</p>
+                    </h4>
                 </div>
-              </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile2.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <div class="col-md-12 g-pad-bottom">
+                    <div id="minos-detector-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators RIGHT -->
+                        <div style="height:600px;width:300px;position:absolute;right:80px; z-index:100;" href="#minos-detector-carousel" data-slide="next">
+                        </div>
+                        <!-- Indicators LEFT -->
+                        <div style="height:600px;width:300px;position:absolute;left:80px; z-index:100;" href="#minos-detector-carousel" data-slide="prev">
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators" style="z-index:1000;">
+                            <li data-target="#minos-detector-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="1"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="2"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="3"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="4"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="5"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="6"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="7"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="8"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="9"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="10"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="11"></li>
+                            <li data-target="#minos-detector-carousel" data-slide-to="12"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="z-index:1;">
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile3.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <div class="item active">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS1.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile4.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS2.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile5.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS3.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile6.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS4.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile7.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS5.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile8.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS6.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile9.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS7.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile10.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS8.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile11.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS9.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile12.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS10.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile13.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS11.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile14.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS12.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile15.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/MINOSpng/MINOS13.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile16.png" style="max-width:700px;width:70vw;"/>
-                      </div>
+                        </div>
+                        <!-- End wrapper -->
+                        <div class="col-md-8 col-md-offset-2">
+                            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Figure 1: Flip through the images, by clicking on the left or the right of each figure or using the indicator located on top, to learn more about the MINOS detectors.</p>
+                        </div>
                     </div>
-                  </div>
+                    <!-- div col-md-12 -->
                 </div>
-              </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile17.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <div class="col-md-12">
+                    <div id="minos-readout-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators RIGHT -->
+                        <div style="height:600px;width:300px;position:absolute;right:80px; z-index:100;" href="#minos-readout-carousel" data-slide="next">
+                        </div>
+                        <!-- Indicators LEFT -->
+                        <div style="height:600px;width:300px;position:absolute;left:80px; z-index:100;" href="#minos-readout-carousel" data-slide="prev">
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators" style="z-index:1000;">
+                            <li data-target="#minos-readout-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#minos-readout-carousel" data-slide-to="1"></li>
+                            <li data-target="#minos-readout-carousel" data-slide-to="2"></li>
+                            <li data-target="#minos-readout-carousel" data-slide-to="3"></li>
+                            <li data-target="#minos-readout-carousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="z-index:1;">
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile18.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <div class="item active">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Readout/Readout1.png" style="max-width:500px;width:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile19.png" style="max-width:700px;width:70vw;"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Readout/Readout2.png" style="max-width:500px;width:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="item">
-                <div class="row text-center">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white" style="max-height:600px;height:60vw;">
-                        <img src="assets/img/researchPlots/Sterile/Sterile20.png" style="max-width:700px;width:70vw;"/>
-                      </div>
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Readout/Readout3.png" style="max-width:500px;width:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Readout/Readout4.png" style="max-width:500px;width:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Readout/Readout5.png" style="max-width:500px;width:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End wrapper -->
                     </div>
-                  </div>
+                    
+                    <div class="col-md-8 col-md-offset-2">
+                            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Figure 2: Flip through the images, by clicking on the left or the right of each figure or using the indicator located on top, to learn more about the MINOS readout system.</p>
+                    </div>
                 </div>
-              </div>
+                <!-- div col-md-12 -->
+
+                <div class="col-md-12">
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The NuMI beam is produced by colliding 120\(~\)GeV protons into a graphite target. The resulting pions and kaons are then focused by two magnetic horns into a decay pipe, where they decay into muon (anti)neutrinos. The magnetic horns allow the beam to be operated in either a \(\nu_\mu\) or \(\overline{\nu}_\mu\) mode, as shown in <a href="#numi-beam-carousel">Fig. 3</a>. In June 2016 the NuMI beam achieved a beam power of 700\(~\)kW making it the most powerful neutrino beamline, currently used for the NO$\nu$A experiment (see below).</p>
+                    </h4>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div id="numi-beam-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators RIGHT -->
+                        <div style="height:600px;width:300px;position:absolute;right:80px; z-index:100;" href="#numi-beam-carousel" data-slide="next">
+                        </div>
+                        <!-- Indicators LEFT -->
+                        <div style="height:600px;width:300px;position:absolute;left:80px; z-index:100;" href="#numi-beam-carousel" data-slide="prev">
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators" style="z-index:1000;">
+                            <li data-target="#numi-beam-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#numi-beam-carousel" data-slide-to="1"></li>
+                            <li data-target="#numi-beam-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="z-index:1;">
+
+                            <div class="item active">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/NuMI/NuMI1.png" style="max-height:500px;height:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/NuMI/NuMI2.png" style="max-height:500px;height:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New item -->
+                            <div class="item">
+                                <div class="row text-center ">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white " style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/NuMI/NuMI3.png" style="max-height:500px;height:50vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End wrapper -->
+                    </div>
+                </div>
+                <!-- div col-md-12 -->
+
+                <div class="col-md-8 col-md-offset-2">
+                    <p align="justify" style="padding-left:50px; padding-right:50px; color:white;"> Figure 3: Creating a muon neutrino (first figure) or antineutrino (second figure) beam with NuMI. Positive and negative pions and kaons resulting from protons interacting with the NuMI target are either focused or defocused by the magnetic horns, depending on the direction of the current running through the horns. When positive pions and kaons are focused into the decay pipe, their decays lead to a neutrino beam dominated by muon neutrinos (first figure for MINOS and second figure for MINOS+). Focusing negative pions and kaons leads to a neutrino beam dominated by muon antineutrinos (third figure).</p>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The MINOS experiment was operational between July 2003 and April 2012, detecting neutrinos from the NuMI neutrino beam with a peak neutrino energy of about 3\(~\)GeV. MINOS was continued by MINOS+, which collected data between October 2013 and June 2016, using a NuMI neutrino beam with a peak neutrino energy shifted to about 7\(~\)GeV. This shift to higher energies away from the three-flavor oscillation maximum around 1.5\(~\)GeV increased the sensitivity to neutrino oscillation models beyond the three-flavor paradigm, including sterile neutrinos, large extra dimensions, and non-standard interactions.</p>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The UTKL Research Group has been active on all fronts in the MINOS and MINOS+ Experiments, from detector R\(\&\)D, data acquisition, detector calibration, service work, and simulation, to data analysis. Currently we are analyzing the final MINOS+ data.</p>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Find out more about the <a href="#stdosc">Three-Flavor</a>, <a href="#sterile">Four-Flavor</a>, and <a href="#led">Large Extra Dimensions</a> searches in MINOS/MINOS+ below or visit the <a href="http://www-numi.fnal.gov/index.html" target="_blank">MINOS website</a>.</p>
+                    </h4>
+                </div>
 
             </div>
-            <div class="col-md-8 col-md-offset-2">
-              <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Figure 1: (Left) Mass-splitting structure in the four-flavor scenario and the four-flavor mixing matrix. (Right) Effect of the mass-splitting \(\Delta m^2_{41}\) on the four-flavor oscillation probabilities.</p>
+        </div>
+    </section>
+    <!--End MINOS Introduction Section -->
+
+    <!-- Standard Osc Intro Section -->
+    <section class="for-full-back color-white" id="stdosc">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="font-weight:bold;">Three-Flavor Oscillations</h1>
+                </div>
+
+                <div class="col-md-12">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px;">The mixing of three neutrino states is experimentally well established by many experiments, including MINOS and MINOS+. This mixing is described by the \(3 \times 3\) Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix which can be parameterized by three mixing angles \(\theta_{12}\), \(\theta_{23}\), \(\theta_{13}\), and a CP violating phase \(\delta\). The oscillation probabilities can be expressed such that they additionally depend on two mass-splittings \(\Delta m^2_{21}\) and \(\Delta m^2_{32}\) where \(\Delta m^2_{ij} = m^2_i - m^2_j\), see <a href="#ThreeFlavorFig1">Fig 1</a>. MINOS and MINOS+ have made precision measurements of the three-flavor atmospheric oscillation parameters \(\Delta m^2_{32}\) and \(\theta_{23}\), see <a href="#ThreeFlavorFig2">Fig 2</a>.</p>
+                    </h4>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>
+                        <img src="assets/img/researchPlots/MINOSpng/ThreeFlavor.png" style="max-width:850px;width:80vw; align:left" id="ThreeFlavorFig1" />
+                    </h4>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <p align="justify" style="padding-left:50px; padding-right:50px;">Figure 1: Measuring the atmospheric neutrino oscillation parameters \(\Delta m^2_{32}\) and \(\theta_{23}\) with MINOS. (Left) In the three-flavor paradigm, the muon neutrino disappearance along the MINOS FD baseline is determined by the mass-splitting \(\Delta m^2_{32}\) and the mixing angle \(\theta_{23}\). (Right) The top figure compares the number of muon neutrino events measured by MINOS as a function of neutrino energy (black points) to the number of events predicted by the three-flavor model if there would be no oscillations (grey line) and the number of events predicted by the three-flavor model that agrees best with the MINOS data (red line). The bottom plot takes the ratio of the data and best prediction to the prediction of no oscillations, which is equivalent to the muon neutrino disappearance probability in the FD. The position of the minimum around 1.5\(~\)GeV depends on the magnitude of \(\Delta m^2_{32}\), while the depth of the minimum is approximately set by \(\sin^2 \theta_{23}\).</p>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>
+                        <img src="assets/img/researchPlots/MINOSpng/ThreeFlavorSpectra.png" style="max-width:400px;width:35vw; align:left" id="ThreeFlavorFig2" />
+                        <img src="assets/img/researchPlots/MINOSpng/ThreeFlavorPanel.png" style="max-width:400px;width:35vw; align:right" />
+                    </h4>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <p align="justify" style="padding-left:50px; padding-right:50px;">Figure 2: Preliminary results from MINOS/MINOS+ for the Three-Flavor search. (Left) Comparison of the measured muon neutrino events as a function of neutrino energy for MINOS and the first two years of MINOS+ data (black points) to the three-flavor prediction without oscillations (red line) and the three-flavor predictions that agrees best with the data (blue line). The best prediction is broken down into its MINOS and MINOS+ contributions, showing the increase in number of neutrino events at higher energies in MINOS+. (Right) The left panels show the 68\(\%\) and 90\(\%\) confidence limits in the (\(\Delta m^{2}_{32}\), \(\sin^{2}\theta_{23}\)) plane calculated for normal mass ordering (top) and inverted mass ordering (bottom). The right panels show log-likelihood profiles for each ordering plotted for \(\Delta{m}^{2}_{32}\) (top right) and \(\sin^{2}\theta_{23}\) (bottom right). The best fit is indicated by the star and occurs in the inverted ordering at \(\Delta m^{2}_{32} = -2.70 \times 10^{-3}\) eV\(^{2}\) and \(\sin^{2}\theta_{23} = 0.69\). Also shown is the MINOS PRL 112, 191801 (2014) best fit at \(\Delta m^{2}_{32} = -2.41 \times 10^{-3}\), eV\(^{2}\) and \(\sin^{2}\theta_{23} = 0.41\).</p>
+                </div>
+
             </div>
-          </div>
         </div>
-        <!-- Carousel ends here -->
+    </section>
+    <!--End Standard Osc Introduction Section -->
 
-        <div class="col-md-12">
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">MINOS and MINOS+ are sensitive to \(\Delta m^2_{41}\), \(\theta_{24}\), and \(\theta_{34}\) through muon neutrino disappearance. MINOS recently reported [<a href="#sterile_ref_5">5</a>] strong constraints on \(\sin^2 \theta_{24}\) over a wide range of \(\Delta m^2_{41}\) values, as shown in <a href="#SterileContours">Fig. 2</a>. A collaboration with the Daya-Bay reactor neutrino experiment [<a href="#sterile_ref_6">6</a>], which is sensitive to \(\Delta m^2_{41}\) and \(\theta_{24}\) through long-baseline electron antineutrino disappearance, allows to constrain the four-flavor model in terms of \(\Delta m^2_{41}\) and \(\sin^2 \theta_{\mu\text{e}} = 4 \vert U_{\text{e}4} \vert^2 \vert U_{\mu4} \vert^2\), as shown in <a href="#SterileContours">Fig. 2</a>. This result can be directly compared to the LSND and MiniBooNE results.</p>
-          </h4>
-        </div>
 
-        <div class="col-md-12" id="SterileContours">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="service-div">
-              <img src="assets/img/researchPlots/Sterile/MultiPlots_MINOS_IceCube_globAppF.png" style="max-width:400px;width:35vw; align:left"/>
-              <img src="assets/img/researchPlots/Sterile/ComboLimit90wGlobal.png" style="max-width:400px;width:35vw; align:right"/>
+    <!-- Sterile Neutrinos Section -->
+    <section class="for-full-back color-dark" id="sterile">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="font-weight:bold;color:white">Four-Flavor Oscillations</h1>
+                </div>
+
+                <div class="col-md-12">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Neutrino oscillations between three neutrino flavors (electron, muon, and tau) are experimentally well established through measurements of solar, atmospheric, nuclear reactor, and accelerator beam neutrinos [<a href="#sterile_ref_1">1</a>] and are consistent with LEP results constraining the number of light neutrinos to three (\(m_{\nu}
+                            < \frac{1}{2}m_{\text{Z}} \approx 45\,\text{GeV}\)) through measurements of the invisible part of the \(Z\) boson decay width [<a href="#sterile_ref_2">2</a>]. The three-flavor paradigm is discussed in more detail in <a href="#stdosc">Three-Flavor Oscillations</a>. There are, however, hints for the existence of an additional neutrino flavor. These include the anomalous electron antineutrino appearance in short-baseline muon antineutrino beams at LSND [<a href="#sterile_ref_3">3</a>] and MiniBooNE [<a href="#sterile_ref_4">4</a>], which require a fourth neutrino state corresponding to a mass-splitting scale of about 1 eV\(^2\). Given the LEP measurements, such a neutrino state would not couple through the Standard Model interactions and as such is called a sterile neutrino.</p>
+
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Mixing between the three active neutrinos and the sterile neutrino modifies the three-flavor oscillation probabilities, as illustrated in <a href="#sterile-neutrino-carousel">Fig. 1</a>. The \(3\times3\) matrix describing mixing in the three-flavor paradigm can be extended to a \(4\times4\) matrix to accommodate the fourth neutrino state, as illustrated in <a href="#sterile-neutrino-carousel">Fig. 1</a>. This introduces three additional mixing angles, \(\theta_{14}\), \(\theta_{24}\), and \(\theta_{34}\), as well as two additional charge-parity (CP) violating phases, \(\delta_{14}\) and \(\delta_{24}\). Furthermore, three new mass-splittings, \(\Delta m^2_{41}\), \(\Delta m^2_{42}\) and \(\Delta m^2_{43}\), enter the oscillation probabilities.</p>
+                    </h4>
+                </div>
+
+                <!-- Carousel starts here -->
+                <div class="col-md-12">
+                    <div id="sterile-neutrino-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators RIGHT -->
+                        <div style="height:600px;width:300px;position:absolute;right:80px; z-index:100;" href="#sterile-neutrino-carousel" data-slide="next">
+                        </div>
+                        <!-- Indicators LEFT -->
+                        <div style="height:600px;width:300px;position:absolute;left:80px; z-index:100;" href="#sterile-neutrino-carousel" data-slide="prev">
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators" style="z-index:1000;">
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="1"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="2"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="3"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="4"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="5"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="6"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="7"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="8"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="9"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="10"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="11"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="12"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="13"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="14"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="15"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="16"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="17"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="18"></li>
+                            <li data-target="#sterile-neutrino-carousel" data-slide-to="19"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="z-index:1;">
+
+                            <div class="item active">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile1.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile2.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile3.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile4.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile5.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile6.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile7.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile8.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile9.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile10.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile11.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile12.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile13.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile14.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile15.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile16.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile17.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile18.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile19.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="service-div color-white" style="max-height:600px;height:60vw;">
+                                                <img src="assets/img/researchPlots/Sterile/Sterile20.png" style="max-width:700px;width:70vw;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Figure 1: (Left) Mass-splitting structure in the four-flavor scenario and the four-flavor mixing matrix. (Right) Effect of the mass-splitting \(\Delta m^2_{41}\) on the four-flavor oscillation probabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel ends here -->
+
+                <div class="col-md-12">
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">MINOS and MINOS+ are sensitive to \(\Delta m^2_{41}\), \(\theta_{24}\), and \(\theta_{34}\) through muon neutrino disappearance. MINOS recently reported [<a href="#sterile_ref_5">5</a>] strong constraints on \(\sin^2 \theta_{24}\) over a wide range of \(\Delta m^2_{41}\) values, as shown in <a href="#SterileContours">Fig. 2</a>. A collaboration with the Daya-Bay reactor neutrino experiment [<a href="#sterile_ref_6">6</a>], which is sensitive to \(\Delta m^2_{41}\) and \(\theta_{24}\) through long-baseline electron antineutrino disappearance, allows to constrain the four-flavor model in terms of \(\Delta m^2_{41}\) and \(\sin^2 \theta_{\mu\text{e}} = 4 \vert U_{\text{e}4} \vert^2 \vert U_{\mu4} \vert^2\), as shown in <a href="#SterileContours">Fig. 2</a>. This result can be directly compared to the LSND and MiniBooNE results.</p>
+                    </h4>
+                </div>
+
+                <div class="col-md-12" id="SterileContours">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="service-div">
+                            <img src="assets/img/researchPlots/Sterile/MultiPlots_MINOS_IceCube_globAppF.png" style="max-width:400px;width:35vw; align:left" />
+                            <img src="assets/img/researchPlots/Sterile/ComboLimit90wGlobal.png" style="max-width:400px;width:35vw; align:right" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Figure 2: The MINOS data 90\(\%\) Feldman-Cousins corrected C.L. obtained using muon neutrino disappearance and searching for a deficit in NC events. The MINOS coverage is compared to other experimental results and to two global fits. (Right) The MINOS and Daya Bay/Bugey-3 combined 90\(\%\) C.L.\(_{\rm{S}}\) limit on \(\sin^{2}2\theta_{\mu e}\) compared to the LSND and MiniBooNE 90\(\%\) C.L. allowed regions.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Ongoing work includes the development of a new analysis framework that exploits the full power of both MINOS detectors and the analysis of MINOS+ beam data which significantly increases the number of events at higher neutrino energies, away from the three-flavor minimum where the model effects are bigger.</p>
+                    </h4>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <h4 style="color:white;">References</h4>
+                    <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">
+                        <ol align="justify" style="padding-left:50px; padding-right:50px; color:white;">
+                            <li id="sterile_ref_1">K. A. Olive et al. (Particle Data Group), Chin. Phys. C 38, 090001 (2014). See the review on neutrino mass, mixing, and oscillations. </li>
+                            <li id="sterile_ref_2">S. Schael et al. (SLD Electroweak Group, DELPHI,450 ALEPH, SLD, SLD Heavy Flavour Group, OPAL, LEP451 Electroweak Working Group, L3), Phys. Rept. 427, 257452 (2006).</li>
+                            <li id="sterile_ref_3">A. Aguilar-Arevalo et al. (LSND), Phys. Rev. D 64,460 112007 (2001).</li>
+                            <li id="sterile_ref_4">A. A. Aguilar-Arevalo et al. (MiniBooNE), Phys. Rev.462 Lett. 110, 161801 (2013).</li>
+                            <li id="sterile_ref_5">P. Adamson et al. (MINOS), Phys. Rev. Lett. 117, 151803 (2016).</li>
+                            <li id="sterile_ref_6">P. Adamson et al. (MINOS, Daya Bay), Phys. Rev. Lett. 117, 151801 (2016), [Addendum: Phys. Rev. Lett. 117, 209901 (2016)].</li>
+                        </ol>
+                    </p>
+                </div>
+
             </div>
-          </div>
-          <div class="col-md-8 col-md-offset-2">
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Figure 2: The MINOS data 90\(\%\) Feldman-Cousins corrected C.L. obtained using muon neutrino disappearance and searching for a deficit in NC events. The MINOS coverage is compared to other experimental results and to two global fits. (Right) The MINOS and Daya Bay/Bugey-3 combined 90\(\%\) C.L.\(_{\rm{S}}\) limit on \(\sin^{2}2\theta_{\mu e}\) compared to the LSND and MiniBooNE 90\(\%\) C.L. allowed regions.</p>
-          </div>
         </div>
+    </section>
+    <!--End Sterile Neutrinos Section -->
 
-        <div class="col-md-12">
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Ongoing work includes the development of a new analysis framework that exploits the full power of both MINOS detectors and the analysis of MINOS+ beam data which significantly increases the number of events at higher neutrino energies, away from the three-flavor minimum where the model effects are bigger.</p>
-          </h4>
+
+
+    <!-- MINOS LED Section -->
+    <section class="for-full-back color-white " id="led">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="font-weight:bold;">Large Extra Dimensions</h1>
+                    </br>
+                    </br>
+                    <div class="col-md-12">
+                        <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+                            Current data are well described by the three-flavor model, as discussed in more detail in <a href="#stdosc">Three-Flavor Oscillations</a> and <a href="#sterile">Four-Flavor Oscillations</a>. However, with increasing precision of experiments, one can test for discrepancies that could be accounted for by small modifications to the standard three-flavor model. One such scenario employs large extra dimensions, which in the context of neutrino oscillations also includes sterile neutrinos, but an infinite amount of them.
+                        </h4>
+                    </div>
+
+                    <img id="led_fig_1" src="assets/img/researchPlots/minos_led/LED_BulkAndBrane.png" style="max-width:400px;width:35vw; align:left;" />
+                    <img src="assets/img/researchPlots/minos_led/LEDmasses.gif" style="max-width:400px;width:35vw; align:left;" />
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <p align="justify"> Figure 1: (Left) Simplified picture of the circular extra dimension in the LED model. (Right) The Kaluza-Klein towers of active and sterile neutrinos for the LED scenario corresponding to an extra dimension radius \(R=0.60~\mu\)m and a smallest active neutrino mass $m_0 = 0.010\,$eV.</p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+                            In the Large Extra Dimension (LED) model of [<a href="#led_ref_5">5</a>, <a href="#led_ref_6">6</a>, <a "#led_ref_7">7</a>, <a "#led_ref_8">8</a>, <a "#led_ref_9">9</a>] three SM singlet fermion fields are introduced in an extra dimension with radius $R$. The extra dimension together with the 3+1 spacetime, or brane, forms the bulk. A simplified picture of the circular extra dimension is given in <a href="#led_fig_1">Fig. 1</a>. The compactness of the extra dimension allows a decomposition of each bulk fermion in Fourier modes, which are interpreted in the brane as Kaluza-Klein (KK) states or infinite towers of neutrinos. The zero modes are identified as the active neutrinos, while the other modes are sterile neutrinos. The Yukawa coupling between the bulk fermions and the active neutrinos leads to mixing between the active and sterile neutrinos, which alters the three-flavor oscillation probabilities, as illustrated in <a href="#led_fig_2">Fig. 2</a> for muon neutrino disappearance along the MINOS FD baseline. Hence, neutrino oscillation measurements can constrain the size of large extra dimensions. Compared to the three-flavor paradigm, this model requires two extra parameters, \(R\) and \(m_0\), where the latter is defined as the lightest active neutrino mass. For normal mass ordering this implies that \(m_3 > m_2 > m_1 \equiv m_0\), while for inverted mass ordering \(m_2 > m_1 > m_3 \equiv m_0\).
+                        </h4>
+                    </div>
+
+                    <img id="led_fig_2" src="assets/img/researchPlots/minos_led/LEDnumudisLong.gif" style="max-width:850px;width:80vw;" />
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <p align="justify"> Figure 2: The muon neutrino disappearance probability along the MINOS FD baseline (with and without detector resolution effects) for the LED scenario corresponding to an extra dimension radius \(R=0.60~\mu\)m and a smallest active neutrino mass \(m_0 = 0.010~\)eV.</p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+                            MINOS recently reported [<a href="#led_ref_10">10</a>] the strongest constraint on \(R\) from a neutrino oscillation experiment, excluding \(R > 0.45~\mu\)m at 90\(\%\) C.L., as shown in <a href="#led_fig_3">Fig. 3</a>. For \(m_0
+                            < 0.1~\)eV, LED mixing effects greater than about 6\(\%\) are excluded. Ongoing work includes the development of a new analysis framework that exploits the full power of both MINOS detectors and the analysis of MINOS+ beam data which significantly increases the number of events at higher neutrino energies, away from the three-flavor minimum where the model effects are bigger. </h4>
+                    </div>
+
+                    <img id="led_fig_3" src="assets/img/researchPlots/minos_led/Sin2ThEffSurfaceWithMINOS_linx.png" style="max-width:850px;width:80vw;" />
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <p align="justify"> Figure 3: The 90\(\%\) C.L. data contour for the LED model, obtained using the Feldman-Cousins technique, based on \(10.56\times10^{20}\) POT MINOS data and assuming normal mass ordering.</p>
+                    </div>
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>References</h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; ">
+                            <ol align="justify" style="padding-left:50px; padding-right:50px; ">
+                                <li id="led_ref_1"> N. Arkani-Hamed, S. Dimopoulos, and G. R. Dvali, Phys. Lett. B. 429, 263 (1998). </br>I. Antoniadis, N. Arkani-Hamed, S. Dimopoulos, and G. R. Divali, Phys. Lett. B. 436, 257 (1998).</br> N. Arkani-Hamed, S. Dimopoulos, and G. R. Dvali, Phys. Rev. D. 59, 086004 (1999).</li>
+                                <li id="led_ref_2">P. Minkowski, Phys. Lett. B. 67, 421 (1977).</br> M. Gell-Mann, P. Ramond, and R. Slansky, in Supergravity, p.315, edited by F. Nieuwenhuizen and D. Freedman, North Holland, Amsterdam, 1979.</br> T. Yanagida, Proceedings of the Workshop on Unified Theory and Baryon Number in the Universe, edited by O. Sawada and A. Sugamoto, KEK, Tsukuba, Japan, 1979.</br> R. N. Mohapatra and G. Senjanovic, Phys. Rev. Lett. 44, 912 (1980).</li>
+                                <li id="led_ref_3">K. R. Dienes, E. Dudas, and T. Gherghetta, Nucl. Phys. B. 557, 25 (1999).</li>
+                                <li id="led_ref_4">N. Arkani-Hamed, S. Dimopoulos, G. R. Dvali, and J. March-Russell, Phys. Rev. D. 65, 024032 (2001).</li>
+                                <li id="led_ref_5">G. R. Dvali and A. Y. Smirnov, Nucl. Phys. B. 563, 63 (1999).</li>
+                                <li id="led_ref_6">R. Barbieri, P. Creminelli, and A. Strumia, Nucl. Phys. B. 585, 28 (2000).</li>
+                                <li id="led_ref_7">R. N. Mohapatra, S. Nandi, and A. Perez-Lorenzana, Phys. Lett. B. 466, 115 (1999).</br> R. N. Mohapatra and A. Perez-Lorenzana, Nucl. Phys. B. 576, 466 (2000). </br> R. N. Mohapatra and A. Perez-Lorenzana, Nucl. Phys. B. 593, 451 (2001).</li>
+                                <li id="led_ref_8">H. Davoudiasl, P. Langacker, and M. Perelstein, Phys. Rev. D. 65, 105015 (2002).</li>
+                                <li id="led_ref_9">P. A. N. Machado, H. Nunokawa, and R. Zukanovich Funchal, Phys. Rev. D. 84, 013003 (2011).</li>
+                                <li id="led_ref_10">P. Adamson
+                                    <emph>et al.</emph> (MINOS Collaboration), Phys. Rev. D. 94, 111101(R) (2016).</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- End MINOS LED Section -->
 
-        <div class="col-md-8 col-md-offset-2">
-          <h4 style="color:white;">References</h4>
-          <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">
-            <ol align="justify" style="padding-left:50px; padding-right:50px; color:white;">
-              <li id="sterile_ref_1">K. A. Olive et al. (Particle Data Group), Chin. Phys. C 38, 090001 (2014). See the review on neutrino mass, mixing, and oscillations. </li>
-              <li id="sterile_ref_2">S. Schael et al. (SLD Electroweak Group, DELPHI,450 ALEPH, SLD, SLD Heavy Flavour Group, OPAL, LEP451 Electroweak Working Group, L3), Phys. Rept. 427, 257452 (2006).</li>
-              <li id="sterile_ref_3">A. Aguilar-Arevalo et al. (LSND), Phys. Rev. D 64,460 112007 (2001).</li>
-              <li id="sterile_ref_4">A. A. Aguilar-Arevalo et al. (MiniBooNE), Phys. Rev.462 Lett. 110, 161801 (2013).</li>
-              <li id="sterile_ref_5">P. Adamson et al. (MINOS), Phys. Rev. Lett. 117, 151803 (2016).</li>
-              <li id="sterile_ref_6">P. Adamson et al. (MINOS, Daya Bay), Phys. Rev. Lett. 117, 151801 (2016), [Addendum: Phys. Rev. Lett. 117, 209901 (2016)].</li>
-            </ol>
-          </p>
+    <!-- NOVA Intro Section -->
+    <section class="color-dark" id="nova">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="color:white;">NO\(\nu\)A</h1>
+                    <h1><img src="assets/img/researchPlots/nova_opsim/NOvA_logo.png" style="max-height:270px;" /></h1>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">NOvA or NuMI Off-Axis \(\nu_{\text{e}}\) Appearance is a two-detector long baseline neutrino oscillation experiment, similar in spirit to MINOS/MINOS+. <a href="#nova-detector">Fig. 1</a> illustrates the basic design of the NO\nuA detectors. Through observation of the oscillation of muon neutrinos to electron neutrinos in the NuMI beam, NO\(\nu\)A aims to measure \(\theta_{13}\) and the CP violating phase \(\delta_{\text{CP}}\), and determine the neutrino mass ordering. In addition, through muon neutrino disappearance, NO$\nu$A performs precision measurements of \(\Delta m^2_{32}\) and \(\theta_{23}\). The NO\(\nu\)A detectors consist of plastic PVC cells filled with liquid scintillator that are read out by WLS fibers coupled to avalanche photodiodes (APDs). A 330 metric-ton ND is located at Fermilab and a much larger 14 metric-kiloton FD in Ash River Minnesota, 810\(~\)km from the NuMI target. Unlike the MINOS detectors, the NO\(\nu\)A detectors are located off-axis of the NuMI beamline such that they are exposed to a large neutrino flux corresponding to an energy of 2\(~\)GeV, the energy at which oscillations from muon neutrinos to electron neutrinos is expected to be at a maximum. </p>
+                    </h4>
+                </div>
+                
+                <div class="col-md-12" id="nova-detector">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="service-div color-white">
+                            <img src="assets/img/researchPlots/nova_opsim/NOvA.png" style="max-width:700px;width:70vw; align:center" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <p align="center" style="padding-left:50px; padding-right:50px; color:white;">Figure 1: The basic design of the NO\(\nu\)A detectors and readout system.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The UTKL Research Group has been involved in detector R\(\&\)D, service work, and simulation efforts on NO\(\nu\)A and is increasing its contributions to data analysis.</p>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Learn more about <a href="novaopsim">Optical Simulations</a> for NOvA performed by the UTKL Research Group below or visit the <a href="https://www-nova.fnal.gov/index.html" target="_blank">NOvA website</a>.</p>
+                    </h4>
+                </div>
+            </div>
         </div>
+    </section>
+    <!--End NOVA Introduction Section -->
 
-      </div>
+    <!-- NOVA Sim Section -->
+    <section class="for-full-back color-white " id="novaopsim">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-12">
+                    <h1 style="font-weight:bold;">NOvA Optical Simulation</h1>
+                </div>
+                </br>
+                </br>
+                </br>
+
+                <div class="col-md-12">
+                    <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+                        Employing GEANT4, we simulated a benchtop setup, shown in <a href="#novaopsim_fig_1">Fig. 1</a>, which measures the NO\(\nu\)A cell light yield using both PMTs and APDs. The measured results are used to constrain the simulation where details on the photon generation and propagation inside the NO\(\nu\)A cell are extracted.
+                    </h4>
+                </div>
+
+                <img id="novaopsim_fig_1" src="assets/img/researchPlots/nova_opsim/GEDC0208_copy.JPG" style="max-width:850px;width:80vw;" />
+
+                <div class="col-md-8 col-md-offset-2">
+                    </br>
+                    </br>
+                    <p align="justify" style="padding-left:50px; padding-right:50px; ">Figure 1: A dark box was constructed as a housing for the setup. A plane of seven 1.1\(~\)m NO\(\nu\)A cells was placed in the bottom container. This was filled with liquid scintillator to make sure the cells were fully immersed.</p>
+                </div>
+
+                <img id="novaopsim_fig_2" src="assets/img/researchPlots/nova_opsim/compositeOutput.png" style="max-width:850px;width:80vw;" />
+
+                <div class="col-md-8 col-md-offset-2">
+                    </br>
+                    </br>
+                    <p align="justify" style="padding-left:50px; padding-right:50px; ">Figure 2: Number of photoelectrons dependencies on various hardware configurations from simulation. (a) Position of the fiber. The zero point and the maximum of the x-axis correspond to the cell center and PVC wall, respectively. (b) Scaling factor applied to the nominal PVC reflectivity. (c) Scintillator light yield. (d) Scaling factor applied to the nominal absorption length. (e) Fiber radius. (f) Fiber length.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End NOVA SIM Section -->
+
+    <!-- DUNE Intro Section -->
+    <section class="color-dark" id="dune">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="color:white;">DUNE</h1>
+                    <h1><img src="assets/img/researchPlots/dune/dune_logo_1.png" style="max-height:270px;" /></h1>
+                    <h4>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The Deep Underground Neutrino Experiment (DUNE) will consist of two underground detectors exposed to the world’s most intense neutrino beam. Equipped with a far detector that consists of four 10 metric-kiloton liquid argon time projection chambers and a near detector at a distance of 1300 km, this international collaboration aims to enter the precision era of neutrino oscillations. Its primary objectives are measurements of the mixing angles \(\theta_{13}\) and \(\theta_{23}\) , the charge-parity (CP) violating phase and determine the neutrino mass ordering. In addition, DUNE is sensitive to neutrinos from core-collapsed supernovae and will conduct proton decay searches.</p>
+                        <img id="dune_fig_1" src="assets/img/researchPlots/dune/logo.png" style="max-width:850px;width:80vw;" />
+                        </br>
+                        </br>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Learn more about the DUNE <a href="#duneopsim">PhotoDetection Simulation</a> efforts going on in our group below or visit the <a href="http://www.dunescience.org" target="_blank">DUNE website</a>.</p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End DUNE Introduction Section -->
+
+    <!-- DUNE OP Sim Section -->
+    <section class="for-full-back color-white " id="duneopsim">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-12">
+                    <h1 style="font-weight:bold;">DUNE PD Simulation</h1>
+                </div>
+                </br>
+                </br>
+                </br>
+
+                <div class="col-md-12">
+                    <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+                        There are two possible geometries under consideration for the far detectors 10 metric-kiloton liquid argon TPCs. They are denoted with the names Single Phase, see <a href="#dune_fig_2">Fig. 1</a>, and Dual Phase geometry, see <a href="#dune_fig_3">Fig. 2</a>, which refer to the amount of matter states of the filling scintillator material, in this case: argon. The Single Phase geometry would only contain liquid argon and the Dual Phase would have mainly liquid argon but also some argon in gas form at the top of the detector.
+                    </h4>
+                </div>
+
+                <img id="dune_fig_2" src="assets/img/researchPlots/dune/apa.png" style="max-width:850px;width:80vw;" />
+
+                <div class="col-md-8 col-md-offset-2">
+                    </br>
+                    </br>
+                    <p style="padding-left:50px; padding-right:50px;">Figure 1: A portion of DUNE’s Single Phase geometry TPC. APA = Anode Plane Assembly. CPA = Cathode Plane Assembly.</p>
+                </div>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <div class="col-md-12">
+                    <img id="dune_fig_3" src="assets/img/researchPlots/dune/dualphase.png" style="max-width:400px;width:35vw;" />
+                    <img id="dune_fig_4" src="assets/img/researchPlots/dune/dualphase1.png" style="max-width:400px;width:35vw;" />
+                    <div class="col-md-8 col-md-offset-2">
+                        </br>
+                        </br>
+                        <p style="padding-left:50px; padding-right:50px; ">Figure 2: Dual Phase TPC design and working principle.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+                        Our main focus is to work on computer simulations of optical photons in liquid argon, which will be of great importance for DUNE. Despite the immense physics potential of the DUNE experiment, the current state of simulations of optical photons propagating through liquid argon is not satisfying. Light detection is key to resolve time reconstruction and to apply crucial trigger conditions for proton decay and supernova neutrino searches. We study the light attenuation and volume scale issues that arise when going from the current relatively small liquid argon detectors to a 17 metric-kiloton chamber. Simulations are also used to determine the optimal light collection techniques (PMTs or SiPMs, optical fibers, or acrylic plates) and detector design.
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End DUNE Op SIM Section -->
+
+    <!--footer Section -->
+    <div class="for-full-back" id="footer" style="padding-bottom:10px;">
+        <p align="center"><a href="https://www.utexas.edu"><img src="assets/img/ut_logo.png" width="20%" style="margin-bottom:-20px;"></a></p>
+        <p style="color:#ed7900;font-size:120%;margin-bottom:-20px;" align="center">Copyright &copy; 2017 UTKL Research Group.</p>
+        <p style="color:#ffffff;font-size:80%;margin-bottom:-10px;" align="center">
+            This website is developed using <a href="http://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>, <a href="http://fontawesome.io/">font-awesome</a> and <a href="http://www.dafont.com/geobats.font">geobats</a>.
+        </p>
     </div>
-  </section>
-  <!--End Sterile Neutrinos Section -->
 
-
-
-  <!-- MINOS LED Section -->
-  <section class="for-full-back color-white " id="led">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">Large Extra Dimensions</h1>
-          </br>
-          </br>
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-              Current data are well described by the three-flavor model, as discussed in more detail in <a href="#stdosc">Three-Flavor Oscillations</a> and <a href="#sterile">Four-Flavor Oscillations</a>. However, with increasing precision of experiments, one can test for discrepancies that could be accounted for by small modifications to the standard three-flavor model. One such scenario employs large extra dimensions, which in the context of neutrino oscillations also includes sterile neutrinos, but an infinite amount of them.
-            </h4>
-          </div>
-
-          <img id="led_fig_1" src="assets/img/researchPlots/minos_led/LED_BulkAndBrane.png" style="max-width:400px;width:35vw; align:left;"/>
-          <img src="assets/img/researchPlots/minos_led/LEDmasses.gif" style="max-width:400px;width:35vw; align:left;"/>
-
-          <div class="col-md-8 col-md-offset-2">
-            <p align="justify"> Figure 1: (Left) Simplified picture of the circular extra dimension in the LED model. (Right) The Kaluza-Klein towers of active and sterile neutrinos for the LED scenario corresponding to an extra dimension radius \(R=0.60~\mu\)m and a smallest active neutrino mass $m_0 =  0.010\,$eV.</p>
-          </div>
-
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-              In the Large Extra Dimension (LED) model of [<a href="#led_ref_5">5</a>, <a  href="#led_ref_6">6</a>, <a "#led_ref_7">7</a>, <a "#led_ref_8">8</a>, <a "#led_ref_9">9</a>] three SM singlet fermion fields are introduced in an extra dimension with radius $R$. The extra dimension together with the 3+1 spacetime, or brane, forms the bulk. A simplified picture of the circular extra dimension is given in <a href="#led_fig_1">Fig. 1</a>. The compactness of the extra dimension allows a decomposition of each bulk fermion in Fourier modes, which are interpreted in the brane as Kaluza-Klein (KK) states or infinite towers of neutrinos. The zero modes are identified as the active neutrinos, while the other modes are sterile neutrinos. The Yukawa coupling between the bulk fermions and the active neutrinos leads to mixing between the active and sterile neutrinos, which alters the three-flavor oscillation probabilities, as illustrated in <a href="#led_fig_2">Fig. 2</a> for muon neutrino disappearance along the MINOS FD baseline. Hence, neutrino oscillation measurements can constrain the size of large extra dimensions. Compared to the three-flavor paradigm, this model requires two extra parameters, \(R\) and \(m_0\), where the latter is defined as the lightest active neutrino mass. For normal mass ordering this implies that \(m_3 > m_2 > m_1 \equiv m_0\), while for inverted mass ordering \(m_2 > m_1 > m_3 \equiv m_0\).
-            </h4>
-          </div>
-
-          <img id="led_fig_2" src="assets/img/researchPlots/minos_led/LEDnumudisLong.gif" style="max-width:850px;width:80vw;"/>
-
-          <div class="col-md-8 col-md-offset-2">
-            <p align="justify"> Figure 2: The muon neutrino disappearance probability along the MINOS FD baseline (with and without detector resolution effects) for the LED scenario corresponding to an extra dimension radius \(R=0.60~\mu\)m and a smallest active neutrino mass \(m_0 =  0.010~\)eV.</p>
-          </div>
-
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-              MINOS recently reported [<a href="#led_ref_10">10</a>] the strongest constraint on \(R\) from a neutrino oscillation experiment, excluding \(R > 0.45~\mu\)m at 90\(\%\) C.L., as shown in <a href="#led_fig_3">Fig. 3</a>. For \(m_0 < 0.1~\)eV, LED mixing effects greater than about 6\(\%\) are excluded. Ongoing work includes the development of a new analysis framework that exploits the full power of both MINOS detectors and the analysis of MINOS+ beam data which significantly increases the number of events at higher neutrino energies, away from the three-flavor minimum where the model effects are bigger.
-            </h4>
-          </div>
-
-          <img id="led_fig_3" src="assets/img/researchPlots/minos_led/Sin2ThEffSurfaceWithMINOS_linx.png" style="max-width:850px;width:80vw;"/>
-
-          <div class="col-md-8 col-md-offset-2">
-            <p align="justify"> Figure 3: The 90\(\%\) C.L. data contour for the LED model, obtained using the Feldman-Cousins technique, based on \(10.56\times10^{20}\) POT MINOS data and assuming normal mass ordering.</p>
-          </div>
-
-          <div class="col-md-8 col-md-offset-2">
-            <h4>References</h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; ">
-              <ol align="justify" style="padding-left:50px; padding-right:50px; ">
-                <li id="led_ref_1"> N. Arkani-Hamed, S. Dimopoulos, and G. R. Dvali, Phys. Lett. B. 429, 263 (1998). </br>I. Antoniadis, N. Arkani-Hamed, S. Dimopoulos, and G. R. Divali, Phys. Lett. B. 436, 257 (1998).</br> N.  Arkani-Hamed, S. Dimopoulos, and G. R. Dvali, Phys. Rev. D. 59, 086004 (1999).</li>
-                <li id="led_ref_2">P. Minkowski, Phys. Lett. B. 67, 421 (1977).</br> M. Gell-Mann, P. Ramond, and R. Slansky, in Supergravity, p.315, edited by F. Nieuwenhuizen and D. Freedman, North Holland, Amsterdam, 1979.</br> T. Yanagida, Proceedings of the Workshop on Unified Theory and Baryon Number in the Universe, edited by O. Sawada and A. Sugamoto, KEK, Tsukuba, Japan, 1979.</br> R. N. Mohapatra and G. Senjanovic, Phys. Rev. Lett. 44, 912 (1980).</li>
-                <li id="led_ref_3">K. R. Dienes, E. Dudas, and T. Gherghetta, Nucl. Phys. B. 557, 25 (1999).</li>
-                <li id="led_ref_4">N. Arkani-Hamed, S. Dimopoulos, G. R. Dvali, and J. March-Russell, Phys. Rev. D. 65, 024032 (2001).</li>
-                <li id="led_ref_5">G. R. Dvali and A. Y. Smirnov, Nucl. Phys. B. 563, 63 (1999).</li>
-                <li id="led_ref_6">R. Barbieri, P. Creminelli, and A. Strumia, Nucl. Phys. B. 585, 28 (2000).</li>
-                <li id="led_ref_7">R. N. Mohapatra, S. Nandi, and A. Perez-Lorenzana, Phys. Lett. B. 466, 115 (1999).</br> R. N. Mohapatra and A. Perez-Lorenzana, Nucl. Phys. B. 576, 466 (2000). </br> R. N. Mohapatra and A. Perez-Lorenzana, Nucl. Phys. B. 593, 451 (2001).</li>
-                <li id="led_ref_8">H. Davoudiasl, P. Langacker, and M. Perelstein, Phys. Rev. D. 65, 105015 (2002).</li>
-                <li id="led_ref_9">P. A. N. Machado, H. Nunokawa, and R. Zukanovich Funchal, Phys. Rev. D. 84, 013003 (2011).</li>
-                <li id="led_ref_10">P. Adamson <emph>et al.</emph> (MINOS Collaboration), Phys. Rev. D. 94, 111101(R) (2016).</li>
-              </ol>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End MINOS LED Section -->
-
-  <!-- NOVA Intro Section -->
-  <section class="color-dark" id="nova">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="color:white;">NO\(\nu\)A</h1>
-          <h1><img src="assets/img/researchPlots/nova_opsim/NOvA_logo.png" style="max-height:270px;"/></h1>
-          <br/>
-          <br/>
-          <br/>
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">NOvA or NuMI Off-Axis \(\nu_{\text{e}}\) Appearance is a two-detector long baseline neutrino oscillation experiment, similar in spirit to MINOS/MINOS+. Through observation of the oscillation of muon neutrinos to electron neutrinos in the NuMI beam, NO\(\nu\)A aims to measure \(\theta_{13}\) and the CP violating phase \(\delta_{\text{CP}}\), and determine the neutrino mass ordering. In addition, through muon neutrino disappearance, NO$\nu$A performs precision measurements of \(\Delta m^2_{32}\) and \(\theta_{23}\). The NO\(\nu\)A detectors consist of plastic PVC cells filled with liquid scintillator that are read out by WLS fibers coupled to avalanche photodiodes (APDs). A 330 metric-ton ND is located at Fermilab and a much larger 14 metric-kiloton FD in Ash River Minnesota, 810\(~\)km from the NuMI target. Unlike the MINOS detectors, the NO\(\nu\)A detectors are located off-axis of the NuMI beamline such that they are exposed to a large neutrino flux corresponding to an energy of 2\(~\)GeV,  the energy at which oscillations from muon neutrinos to electron neutrinos is expected to be at a maximum.</p>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The UTKL Research Group has been involved in detector R\(\&\)D, service work, and simulation efforts on NO\(\nu\)A and is increasing its contributions to data analysis.</p>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Learn more about <a href="novaopsim">Optical Simulations</a> for NOvA performed by the UTKL Research Group below or visit the <a href="https://www-nova.fnal.gov/index.html" target="_blank">NOvA website</a>.</p>
-          </h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End NOVA Introduction Section -->
-
-  <!-- NOVA Sim Section -->
-  <section class="for-full-back color-white " id="novaopsim">
-    <div class="container">
-      <div class="row text-center">
-
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">NOvA Optical Simulation</h1>
-        </div>
-        </br>
-        </br>
-        </br>
-
-        <div class="col-md-12">
-          <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-            Employing GEANT4, we simulated a benchtop setup, shown in <a href="#novaopsim_fig_1">Fig. 1</a>, which measures the NO\(\nu\)A cell light yield using both PMTs and APDs. The measured results are used to constrain the simulation where details on the photon generation and propagation inside the NO\(\nu\)A cell are extracted.
-          </h4>
-        </div>
-
-        <img id="novaopsim_fig_1" src="assets/img/researchPlots/nova_opsim/GEDC0208_copy.JPG" style="max-width:850px;width:80vw;"/>
-
-        <div class="col-md-8 col-md-offset-2">
-          </br>
-          </br>
-          <p align="justify" style="padding-left:50px; padding-right:50px; ">Figure 1: A dark box was constructed as a housing for the setup. A plane of seven 1.1\(~\)m NO\(\nu\)A cells was placed in the bottom container. This was filled with liquid scintillator to make sure the cells were fully immersed.</p>
-        </div>
-
-        <img id="novaopsim_fig_2" src="assets/img/researchPlots/nova_opsim/compositeOutput.png" style="max-width:850px;width:80vw;"/>
-
-        <div class="col-md-8 col-md-offset-2">
-          </br>
-          </br>
-          <p align="justify" style="padding-left:50px; padding-right:50px; ">Figure 2: Number of photoelectrons dependencies on various hardware configurations from simulation. (a) Position of the fiber. The zero point and the maximum of the x-axis correspond to the cell center and PVC wall, respectively. (b) Scaling factor applied to the nominal PVC reflectivity. (c) Scintillator light yield. (d) Scaling factor applied to the nominal absorption length. (e) Fiber radius. (f) Fiber length.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End NOVA SIM Section -->
-
-  <!-- DUNE Intro Section -->
-  <section class="color-dark" id="dune">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="color:white;">DUNE</h1>
-          <h1><img src="assets/img/researchPlots/dune/dune_logo_1.png" style="max-height:270px;"/></h1>
-          <h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">The Deep Underground Neutrino Experiment (DUNE) will consist of two underground detectors exposed to the world’s most intense neutrino beam. Equipped with a far detector that consists of four 10 metric-kiloton liquid argon time projection chambers and a near detector at a distance of 1300 km, this international collaboration aims to enter the precision era of neutrino oscillations. Its primary objectives are measurements of the mixing angles \(\theta_{13}\) and \(\theta_{23}\) , the charge-parity (CP) violating phase and determine the neutrino mass ordering. In addition, DUNE is sensitive to neutrinos from core-collapsed supernovae and will conduct proton decay searches.</p>
-            <img id="dune_fig_1" src="assets/img/researchPlots/dune/logo.png" style="max-width:850px;width:80vw;"/>
-            </br>
-            </br>
-            <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Learn more about the DUNE <a href="#duneopsim">PhotoDetection Simulation</a> efforts going on in our group below or visit the <a href="http://www.dunescience.org" target="_blank">DUNE website</a>.</p>
-          </h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End DUNE Introduction Section -->
-
-  <!-- DUNE OP Sim Section -->
-  <section class="for-full-back color-white " id="duneopsim">
-    <div class="container">
-      <div class="row text-center">
-
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">DUNE PD Simulation</h1>
-        </div>
-        </br>
-        </br>
-        </br>
-
-        <div class="col-md-12">
-          <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-            There are two possible geometries under consideration for the far detectors 10 metric-kiloton liquid argon TPCs. They are denoted with the names Single Phase, see <a href="#dune_fig_2">Fig. 1</a>, and Dual Phase geometry, see <a href="#dune_fig_3">Fig. 2</a>, which refer to the amount of matter states of the filling scintillator material, in this case: argon. The Single Phase geometry would only contain liquid argon and the Dual Phase would have mainly liquid argon but also some argon in gas form at the top of the detector.
-          </h4>
-        </div>
-
-        <img id="dune_fig_2" src="assets/img/researchPlots/dune/apa.png" style="max-width:850px;width:80vw;"/>
-
-        <div class="col-md-8 col-md-offset-2">
-          </br>
-          </br>
-          <p style="padding-left:50px; padding-right:50px;">Figure 1: A portion of DUNE’s Single Phase geometry TPC. APA = Anode Plane Assembly. CPA = Cathode Plane Assembly.</p>
-        </div>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <div class="col-md-12">
-          <img id="dune_fig_3" src="assets/img/researchPlots/dune/dualphase.png" style="max-width:400px;width:35vw;"/>
-          <img id="dune_fig_4" src="assets/img/researchPlots/dune/dualphase1.png" style="max-width:400px;width:35vw;"/>
-          <div class="col-md-8 col-md-offset-2">
-            </br>
-            </br>
-            <p style="padding-left:50px; padding-right:50px; ">Figure 2: Dual Phase TPC design and working principle.</p>
-          </div>
-        </div>
-
-
-        <div class="col-md-12">
-          <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-            Our main focus is to work on computer simulations of optical photons in liquid argon, which will be of great importance for DUNE. Despite the immense physics potential of the DUNE experiment, the current state of simulations of optical photons propagating through liquid argon is not satisfying. Light detection is key to resolve time reconstruction and to apply crucial trigger conditions for proton decay and supernova neutrino searches. We study the light attenuation and volume scale issues that arise when going from the current relatively small liquid argon detectors to a 17 metric-kiloton chamber. Simulations are also used to determine the optimal light collection techniques (PMTs or SiPMs, optical fibers, or acrylic plates) and detector design.
-          </h4>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End DUNE Op SIM Section -->
-
-  <!--footer Section -->
-  <div class="for-full-back" id="footer" style="padding-bottom:10px;">
-    <p align="center"><a href="https://www.utexas.edu"><img src="assets/img/ut_logo.png" width="20%" style="margin-bottom:-20px;"></a></p>
-    <p style="color:#ed7900;font-size:120%;margin-bottom:-20px;" align="center">Copyright &copy; 2017 UTKL Research Group.</p>
-    <p style="color:#ffffff;font-size:80%;margin-bottom:-10px;" align="center">
-      This website is developed using <a href="http://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>, <a href="http://fontawesome.io/">font-awesome</a> and <a href="http://www.dafont.com/geobats.font">geobats</a>.
-    </p>
-  </div>
-
-  <!--End footer Section -->
-  <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-  <!-- CORE JQUERY  -->
-  <script src="assets/plugins/jquery-1.10.2.js"></script>
-  <!-- BOOTSTRAP CORE SCRIPT   -->
-  <script src="assets/plugins/bootstrap.js"></script>
-  <!-- CUSTOM SCRIPTS -->
-  <script src="assets/js/custom.js"></script>
+    <!--End footer Section -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
