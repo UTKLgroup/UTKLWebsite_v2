@@ -13,7 +13,7 @@
     <meta name="author" content="">
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
+    <![endif]-->
     <title>UTKL Research Group</title>
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
@@ -29,10 +29,10 @@
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <!-- [if lt IE 9]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif] -->
 
     <!-- Adding MathJax to show mathematical formula -->
     <script type="text/x-mathjax-config">
@@ -48,36 +48,48 @@
         var list = [];
         var previousHighlightedID = -1;
         var currentHighlightedID = -1;
-        setInterval(function() {
-            for (i = 0; i < sectionIDs.length; i++) {
-                if ($(sectionIDs[i]).isOnScreen(
-                        function(deltas) {
-                            return deltas.top >= 400 && deltas.bottom >= 400;
-                        }
-                    )) {
+        setInterval( function()
+		{
+            for (i = 0; i < sectionIDs.length; i++)
+			{
+                if ($(sectionIDs[i]).isOnScreen( function(deltas)
+				{
+                    return deltas.top >= 400 && deltas.bottom >= 400;
+                }
+                ))
+				{
                     list.push(i);
                 }
             }
-            if (list.length == 1) {
+            if (list.length == 1)
+			{
                 currentHighlightedID = list[0];
-            } else if (list.length == 2) {
+            }
+			else if (list.length == 2)
+			{
                 currentHighlightedID = list[0];
-            } else {
-                currentHighlightedID = list[1];
             }
+			else
+			{
+                currentHighlightedID = lis
+                    return deltas.top >= 400 && deltas.bottom >= 400;
+            }
+			t[1];
+        }
 
-            for (i = 0; i < sectionIDs.length; i++) {
-                list.shift();
-            }
+        for (i = 0; i < sectionIDs.length; i++)
+		{
+            list.shift();
+        }
 
-            if (currentHighlightedID != previousHighlightedID) {
-                $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
-                $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
-                previousHighlightedID = currentHighlightedID;
-            }
-        }, 100);
+        if (currentHighlightedID != previousHighlightedID)
+		{
+            $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
+            $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
+            previousHighlightedID = currentHighlightedID;
+        }
+    	}, 100);
     </script>
-
 </head>
 
 <body>
@@ -90,7 +102,8 @@
                 </h1>
 
                 <h2 class="head-sub-main"></h2>
-                <h3 class="head-last"><span style="color:#323232;font-size:1.3vw;font-weight:bold;color:#323232;background-color:#ababab;position:relative; left:20px; bottom:1.5vw;padding-left:15px; padding-right:15px;padding-top:15px; padding-bottom:15px;border-radius:1vw; opacity:1;">Thanks to University of Texas at Austin, DOE, NSF, URA, and CNRS for supporting our research.</span></h3>
+                <h3 class="head-last"><span style="color:#323232;font-size:1.1vw;font-weight:bold;color:#323232;background-color:#ababab;position:relative; left:20px; bottom:1.5vw;padding-left:15px; padding-right:15px;padding-top:15px; padding-bottom:15px;border-radius:1vw; opacity:1;">Thanks to University of Texas at Austin, DOE, NSF, URA, and CNRS for supporting our research.</span></h3>
+
             </div>
         </div>
     </div>
@@ -134,25 +147,25 @@
     <!--About Section-->
     <section class="for-full-back color-dark" id="about">
         <div class="container">
-
             <div class="row text-center" id="research-directions">
                 <div class="col-md-10 col-md-offset-1 ">
-                    <!--
-          <h1><span style="color:white;font-family:cursive;font-weight:bold;font-size:400%;">&nu;</span><subscript><span style="color:white;font-family:geobats;font-weight:bold;font-size:15%;position:relative; top:20px;right:20px;">Ú</span></subscript></h1>
-        -->
+
+			        <!-- <h1><span style="color:white;font-family:cursive;font-weight:bold;font-size:400%;">&nu;</span><subscript><span style="color:white;font-family:geobats;font-weight:bold;font-size:15%;position:relative; top:20px;right:20px;">Ú</span></subscript></h1> -->
+
                     <h1 style="color:white;"><img src="assets/img/research.png" width="100vw" /></h1>
                     <h4 style="color:white; margin-left: 5vw; margin-right: 5vw;" align="justify">
-                        <strong>
-            Our work focuses on experimental neutrino physics. As members of the MINOS/MINOS+, NO\(\nu\)A, SuperNEMO, and MINER Collaborations, we study neutrino oscillations, neutrinoless double beta decay, and coherent neutrino scattering. Find out more about these topics and the research we conduct by clicking on the buttons below.
-          </strong>
+                    <strong>
+			            Our work focuses on experimental neutrino physics. As members of the MINOS/MINOS+, NO\(\nu\)A, SuperNEMO, and MINER Collaborations, we study neutrino oscillations, neutrinoless double beta decay, and coherent neutrino scattering. Find out more about these topics and the research we conduct by clicking on the buttons below.
+          			</strong>
                     </h4>
+
                 </div>
             </div>
 
             <div class="row text-center" id="research-direction-1">
                 <div class="col-md-12">
 
-                   <a href="nuosc.html">
+                	<a href="nuosc.html">
                         <div class="col-md-6">
                             <div class="service-div" style="height:20vw; min-height: 150px;">
                                 <div style="display: inline-block; min-height: 50px; height:10vw; max-height: 120px">
@@ -160,7 +173,7 @@
                                     <img src="assets/img/nova.png" style="min-height:50px; height:10vw; max-height: 100px;" align="center" />
                                     <img src="assets/img/DUNE.png" style="min-height:50px; height:10vw; max-height: 100px;" align="right" />
                                 </div>
-                                <h3 align="center" style="font-size: 2.5vw; line-height: 3vw;">Neutrino Oscillations </h3>
+                                <h3 align="center" style="font-size: 2.5vw; line-height: 3vw;">Neutrino Oscillations</h3>
                             </div>
                         </div>
                     </a>
@@ -171,10 +184,11 @@
                                 <div style="display: inline-block; min-height: 50px; height:10vw; max-height: 120px">
                                     <img src="assets/img/supernemo.png" style="min-height:50px; height:10vw; max-height: 100px;" align="left"/>
                                 </div>
-                                <h3 align="center" style="font-size: 2.5vw; line-height: 3vw;">Neutrinoless Double Beta Decay </h3>
+                                <h3 align="center" style="font-size: 2.5vw; line-height: 3vw;">Neutrinoless Double Beta Decay</h3>
                             </div>
                         </div>
                     </a>
+
                 </div>
             </div>
 
@@ -193,7 +207,7 @@
                     </a>
 
                     <a href="#">
-                      <!-- rnd.html -->
+                    	<!-- rnd.html -->
                         <div class="col-md-6">
                             <div class="service-div" style="height:20vw; min-height: 150px;">
                                 <div style="display: inline-block; min-height: 50px; height:10vw; max-height: 120px">
@@ -209,13 +223,15 @@
 
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 ">
+
                     <!--<h1 style="color:white;"><i class="fa fa-star fa-2x"></i></h1>-->
                     <h1 style="color:white;">Selected Work</h1>
                     <h4 style="color:white;">
                         <strong>
-            Selected results from the UTKL Research Group.
-          </strong>
+            				Selected results from the UTKL Research Group.
+        				</strong>
                     </h4>
+
                 </div>
             </div>
 
@@ -257,6 +273,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- New item -->
                     <div class="item">
                         <div class="row text-center g-pad-bottom">
@@ -276,6 +293,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- New item -->
                     <div class="item">
                         <div class="row text-center g-pad-bottom">
@@ -288,8 +306,9 @@
                                         </p>
                                         <p align="justify" style="font-family:Times; padding-left:5vw; padding-right:5vw; font-size: 1.4vw; line-height: 2vw;">
                                             90$\%$ C.L. in the standard short-baseline parameter space, assuming $\theta_{14},\theta_{24}
-                                            < 0.25\pi$. MINOS+ excludes the parameter space to the upper-right of the solid contour. </p>
-                                                <img src="assets/img/nuesterile.png" style="max-width:60%; padding-top: 25px; padding-bottom: 25px; padding-left:25px;padding-right:35px;" />
+                                            < 0.25\pi$. MINOS+ excludes the parameter space to the upper-right of the solid contour.
+										</p>
+                                            <img src="assets/img/nuesterile.png" style="max-width:60%; padding-top: 25px; padding-bottom: 25px; padding-left:25px;padding-right:35px;" />
                                     </div>
                                 </div>
                             </div>
@@ -306,41 +325,41 @@
     <!-- About Team Section -->
     <section class="for-full-back color-light" id="about-team">
         <div class="container">
-
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 ">
                     <!-- <h1><i class="fa fa-users fa-2x"></i></h1> -->
                     <h1>Group Members</h1>
                     <h4>
                         <!-- <strong>
-            We are a diverse research team with people from all over the world.
-            </strong> -->
-                        <!--
-            <br />
-            <img src="assets/flags/flags/4x3/be.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/cn.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/es.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/in.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/it.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/mx.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/pl.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/us.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/ve.svg" style="max-width:60px;"/>
-            <img src="assets/flags/flags/4x3/vn.svg" style="max-width:60px;"/>
-            <br />
-          -->
-                        <br />
-                        <br />
+            				We are a diverse research team with people from all over the world.
+            			</strong> -->
+
+			            <!-- <br />
+			            <img src="assets/flags/flags/4x3/be.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/cn.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/es.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/in.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/it.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/mx.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/pl.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/us.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/ve.svg" style="max-width:60px;"/>
+			            <img src="assets/flags/flags/4x3/vn.svg" style="max-width:60px;"/>
+			            <br /> -->
+
+                        <!-- <br /> -->
+                        <!-- <br /> -->
                     </h4>
                 </div>
             </div>
 
             <div class="row text-center">
                 <div class="col-md-12 g-pad-bottom">
+
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
                             <img src="assets/img/karol.png" alt="">
-                            <h3> <strong> Karol Lang </strong></h3>
+                            <h3> <strong>Karol Lang</strong></h3>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
@@ -355,18 +374,20 @@
                             <h3> <strong>Junting Huang</strong></h3>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
-                            <img src="assets/img/adam_s.jpeg" alt="">
-                            <h3> <strong>Adam Paul S.</strong></h3>
+                            <img src="assets/img/fernanda.jpg" alt="">
+                            <h3> <strong>Fernanda Psihas</strong></h3>
                         </div>
                     </div>
+
                 </div>
 
                 </br>
 
                 <div class="col-md-12 g-pad-bottom">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+					<div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
                             <img src="assets/img/tom.jpg" alt="">
                             <h3> <strong>Thomas Carroll</strong></h3>
@@ -380,31 +401,27 @@
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
-                            <img src="assets/img/simon.jpg" alt="">
-                            <h3> <strong>Simon De Rijck</strong></h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <div class="team-member">
                             <img src="assets/img/bea.png" alt="">
                             <h3> <strong>Beatriz Tapia</strong></h3>
                         </div>
                     </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/dung.jpg" alt="">
+                            <h3> <strong>Dung Phan</strong></h3>
+                        </div>
+                    </div>
+
                 </div>
 
                 </br>
 
                 <div class="col-md-12 g-pad-bottom">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+					<div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
-                            <img src="assets/img/dung.jpg" alt="">
-                            <h3> <strong> Dung Phan </strong></h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <div class="team-member">
-                            <img src="assets/img/shiv.jpg" alt="">
-                            <h3> <strong> Shiv Yadavalli </strong></h3>
+                            <img src="assets/img/team.png" alt="">
+                            <h3> <strong>Ben Fox</strong></h3>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
@@ -413,23 +430,44 @@
                             <h3> <strong>Christopher Webster</strong></h3>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
-                            <img src="assets/img/noah.jpg" alt="">
-                            <h3> <strong>Noah Vaughan</strong></h3>
+                            <img src="assets/img/team.png" alt="">
+                            <h3> <strong>Dennis Hong</strong></h3>
                         </div>
                     </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/matthew.jpg" alt="">
+                            <h3> <strong>Matthew Huynh</strong></h3>
+                        </div>
+                    </div>
+
                 </div>
 
                 </br>
 
                 <div class="col-md-12 g-pad-bottom">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+					<div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
-                            <img src="assets/img/team.png" alt="">
-                            <h3> <strong>Reese S Lance</strong></h3>
+                            <img src="assets/img/emily.jpg" alt="">
+                            <h3> <strong>Emily Tsai</strong></h3>
                         </div>
                     </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/team.png" alt="">
+                            <h3> <strong>Jay Chen</strong></h3>
+                        </div>
+                    </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/aaron.jpg" alt="">
+                            <h3> <strong>Aaron Bae</strong></h3>
+                        </div>
+                    </div>
+
                 </div>
 
                 </br>
@@ -442,11 +480,12 @@
                     <h1>Alumni</i>
                     </h1>
                     <!-- <h3 style="font-weight:bold;">
-            Alumni of the UTKL Research Group
-          </h3> -->
+            			Alumni of the UTKL Research Group
+        			</h3> -->
                     <br />
                 </div>
                 <div class="col-md-12 g-pad-bottom">
+
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
                             <img src="assets/img/will_flanagan.png" alt="">
@@ -471,11 +510,13 @@
                             <h3> <strong>Abhishek Rajput</strong></h3>
                         </div>
                     </div>
+
                 </div>
 
                 </br>
 
                 <div class="col-md-12 g-pad-bottom">
+
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
                             <img src="assets/img/son_cao.jpg" alt="">
@@ -500,9 +541,13 @@
                             <h3> <strong>Federico Noca</strong></h3>
                         </div>
                     </div>
+
                 </div>
 
+				</br>
+
                 <div class="col-sm-12 g-pad-bottom">
+
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="team-member">
                             <img src="assets/img/team.png" alt="">
@@ -515,6 +560,44 @@
                             <h3> <strong>Benton Pahlka</strong></h3>
                         </div>
                     </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/adam_s.jpeg" alt="">
+                            <h3> <strong>Adam Paul S.</strong></h3>
+                        </div>
+                    </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/simon.jpg" alt="">
+                            <h3> <strong>Simon De Rijck</strong></h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                </br>
+
+				<div class="col-sm-12 g-pad-bottom">
+
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/shiv.jpg" alt="">
+                            <h3> <strong>Shiv Yadavalli</strong></h3>
+                        </div>
+                    </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/noah.jpg" alt="">
+                            <h3> <strong>Noah Vaughan</strong></h3>
+                        </div>
+                    </div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/team.png" alt="">
+                            <h3> <strong>Reese S Lance</strong></h3>
+                        </div>
+                    </div>
+
                 </div>
 
                 </br>
@@ -525,7 +608,7 @@
     <!--End About Team Section -->
 
     <!-- Pricing Section -->
-    <section class="for-full-back color-dark " id="publication-sec">
+    <section class="for-full-back color-dark" id="publication-sec">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 ">
@@ -533,8 +616,8 @@
                     <h1 style="color:white;">Publications</h1>
                     <h4 style="color:white;">
                         <strong>
-            List of publications over the last three years.
-          </strong>
+            				List of publications over the last three years.
+          				</strong>
                     </h4>
                 </div>
             </div>
@@ -544,7 +627,7 @@
                     <div class="col-md-3" style="width:100%;">
                         <ol class="plan">
                             <li class="plan-head">Journal/Proceeding Papers</li>
-                            <!--<li class="main-price">$99 only</li>-->
+                            <!-- <li class="main-price">$99 only</li> -->
                             <li>[1] S. De Rijck and J. Huang, <strong>Constraints on large extra dimensions from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 888 (2017) no.1, 012162, doi: 10.1088/1742-6596/888/1/012162.</li>
                             <li>[2] T. J. Carroll, <strong>Muon Neutrino Disappearance Measurement at MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 888 (2017) no.1, 012161, doi: 10.1088/1742-6596/888/1/012161.</li>
                             <li>[3] S. De Rijck, <strong>Latest Results from MINOS and MINOS+</strong>, [On Behalf of the MINOS+ Collaboration], J.Phys.Conf.Ser. 873 (2017) no.1, 012032, doi: 10.1088/17426596/873/1/012032.</li>
@@ -572,11 +655,11 @@
                             </li>
                             <li>[22] K. Lang, <strong>Future prospects for measurements of mass hierarchy and CP violation</strong>, Nucl. Part. Phys. Proc. 260, 183 (2015), doi:10.1016/j.nuclphysbps.2015.02.038.</li>
                             <li>[23] P. Adamson et al. [MINOS Collaboration], <strong>Study of quasielastic scattering using charged-current \(\nu_\mu\)–Fe interactions in the MINOS near detector</strong>, Phys. Rev. D 91, no. 1, 012005 (2015), doi:10.1103/PhysRevD.91.012005, [arXiv:1410.8613 [hep-ex]].</li>
-                            <!--
-              <li class="bottom" style="text-align:center;">
-                <a href="#" class="btn btn-primary">Download BiBTeX</a>
-              </li>
-            -->
+
+			            	<!-- <li class="bottom" style="text-align:center;">
+			            		<a href="#" class="btn btn-primary">Download BiBTeX</a>
+			            	</li> -->
+
                         </ol>
                     </div>
                 </div>
@@ -585,7 +668,7 @@
                     <div class="col-md-3" style="width:100%;">
                         <ol class="plan">
                             <li class="plan-head">Preprints</li>
-                            <!--<li class="main-price">$99 only</li>-->
+                            <!-- <li class="main-price">$99 only</li> -->
                             <li>[1] T. J. Carroll, <strong>New Constraints on Sterile Neutrinos with MINOS/MINOS+ and Daya Bay</strong>, arXiv:1705.05064 [hep-ex].</li>
                             <li>[2] B. Abi et al. [DUNE Collaboration], <strong>The Single-Phase ProtoDUNE Technical Design Report</strong>, arXiv:1706.07081 [physics.ins-det].</li>
                             <li>[3] P. Adamson et al. [NOvA Collaboration], <strong>Search for active-sterile neutrino mixing using neutral-current interactions in NOvA</strong>, arXiv:1706.04592 [hep-ex].</li>
@@ -593,11 +676,11 @@
                             <li>[5] R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 4 The DUNE Detectors at LBNF</strong>, arXiv:1601.02984 [physics.ins-det].</li>
                             <li>[6] R. Acciarri et al. [DUNE Collaboration], <strong>Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) : Volume 2: The Physics Program for DUNE at LBNF</strong>, arXiv:1512.06148 [physics.ins-det].</li>
                             <li>[7] K. Lang [CHIPS Collaboration]<strong>, Prospects for CHIPS (R&amp;D of Water Cherenkov Detectors in Mine Pits)</strong>, arXiv:1504.08330 [physics.ins-det].</li>
-                            <!--
-              <li class="bottom" style="text-align:center;">
-                <a href="#" class="btn btn-primary">Download BiBTeX</a>
-              </li>
-            -->
+
+			            	<li class="bottom" style="text-align:center;">
+			                	<a href="#" class="btn btn-primary">Download BiBTeX</a>
+			            	</li>
+
                         </ol>
                     </div>
                 </div>
@@ -664,9 +747,7 @@
             </div>
         </div>
     </section>
-
     <!--End Puclications Section -->
-
 
     <!-- Resources Section -->
     <section class="for-full-back color-white " id="resources-sec">
@@ -678,8 +759,8 @@
                     <h1>Resources</h1>
                     <h4>
                         <!-- <strong>
-              Here we make all of our research resources public for students, reseachers and general audiences. You can find other useful non-scientific information also.
-            </strong> -->
+            				Here we make all of our research resources public for students, reseachers and general audiences. You can find other useful non-scientific information also.
+            			</strong> -->
                     </h4>
                 </div>
             </div>
@@ -729,55 +810,57 @@
                 </div>
             </div>
 
-            <!-- <div class="row text-center g-pad-bottom">
-        <div class="col-md-12">
+            <div class="row text-center g-pad-bottom">
+        		<div class="col-md-12">
 
-          <div class="col-md-4">
-            <div class="service-div" style="height:600px">
-              <i class="fa fa-bar-chart-o fa-5x"></i>
-              <h3> Data </h3>
-              <p align="justify">
-                Results and datasets from our work are made open access. Selected publications are provided upon request.
-              </p>
-            </div>
-          </div>
+					<!-- <div class="col-md-4">
+						<div class="service-div" style="height:600px">
+							<i class="fa fa-bar-chart-o fa-5x"></i>
+							<h3> Data </h3>
+							<p align="justify">
+								Results and datasets from our work are made open access. Selected publications are provided upon request.
+							</p>
+						</div>
+					</div>
 
-          <div class="col-md-4">
-            <div class="service-div" style="height:600px">
-              <i class="fa fa-beer fa-5x"></i>
-              <h3>Out-of-the-lab</h3>
-              <p align="justify">
-                Beer moments, great pictures taken by Marek and other entertaining contents by our group.
-              </p>
-            </div>
-          </div>
+					<div class="col-md-4">
+						<div class="service-div" style="height:600px">
+							<i class="fa fa-beer fa-5x"></i>
+							<h3>Out-of-the-lab</h3>
+							<p align="justify">
+								Beer moments, great pictures taken by Marek and other entertaining contents by our group.
+							</p>
+						</div>
+					</div>
 
-          <div class="col-md-4">
-            <div class="service-div" style="height:600px">
-              <i class="fa fa-bookmark fa-5x"></i>
-              <h3>Useful Links</h3>
-              <p align="justify">
-                Other external links and useful information.
-              </p>
-            </div>
-          </div>
+					<div class="col-md-4">
+						<div class="service-div" style="height:600px">
+							<i class="fa fa-bookmark fa-5x"></i>
+							<h3>Useful Links</h3>
+							<p align="justify">
+								Other external links and useful information.
+							</p>
+						</div>
+					</div> -->
 
-        </div>
-      </div> -->
+				</div>
+			</div>
 
-        </div>
-    </section>
+		</div>
+	</section>
     <!--End Services Section -->
+
     <!-- Contact Section -->
     <section class="for-full-back color-light " id="contact-sec">
         <div class="container">
+
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 ">
                     <!-- <h1><i class="fa fa-handshake-o fa-2x"> </i></h1> -->
                     <h1>Contact</h1>
                     <!-- <h4 style="font-weight:bold;">
-            Welcome to UTKL group! Whoever you are, we hope you enjoy your stay and find useful information on this webpage.
-          </h4> -->
+        				Welcome to UTKL group! Whoever you are, we hope you enjoy your stay and find useful information on this webpage.
+    				</h4> -->
                 </div>
             </div>
 
@@ -832,41 +915,44 @@
                 </div>
 
                 <!-- <div class="col-md-7">
-          <h2><i class="fa fa-comments-o fa-2x"></i></h2>
-          <p>
-            We love to hear from you and value any of your comments. If you have any, please send it to us using the contact from below. We would try to answer as soon as possible. Your comments can be anonymous.
-          </p>
-          <form>
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" required="required" placeholder="Name">
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" required="required" placeholder="Email address">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
-                </div>
-                <div class="form-group" style="float:right;">
-                  <button type="submit" class="btn btn-default">Submit Request</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div> -->
+	        		<h2><i class="fa fa-comments-o fa-2x"></i></h2>
+	    			<p>
+	        			We love to hear from you and value any of your comments. If you have any, please send it to us using the contact from below. We would try to answer as soon as possible. Your comments can be anonymous.
+	        		</p>
+
+	        		<form>
+		        		<div class="row">
+		            		<div class="col-md-6 col-sm-6">
+		            			<div class="form-group">
+		                			<input type="text" class="form-control" required="required" placeholder="Name">
+		            			</div>
+		            		</div>
+			            	<div class="col-md-6 col-sm-6">
+			                	<div class="form-group">
+			                		<input type="text" class="form-control" required="required" placeholder="Email address">
+			            		</div>
+			            	</div>
+		        		</div>
+
+		            	<div class="row">
+		            		<div class="col-md-12 col-sm-12">
+		            			<div class="form-group">
+		                			<textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+		            			</div>
+			            		<div class="form-group" style="float:right;">
+			            			<button type="submit" class="btn btn-default">Submit Request</button>
+			            		</div>
+		        			</div>
+		        		</div>
+	        		</form>
+    			</div> -->
 
             </div>
         </div>
     </section>
     <!--End Contact Section -->
-    <!--footer Section -->
+
+    <!--Footer Section -->
     <div class="for-full-back" id="footer" style="padding-bottom:10px;">
         <p align="center"><a href="https://www.utexas.edu"><img src="assets/img/ut_logo.png" width="20%" style="margin-bottom:-20px;"></a></p>
         <p style="color:#ed7900;font-size:120%;margin-bottom:-20px;" align="center">Copyright &copy; 2017 UTKL Research Group.</p>
@@ -874,8 +960,8 @@
             This website is developed using <a href="http://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>, <a href="http://fontawesome.io/">font-awesome</a> and <a href="http://www.dafont.com/geobats.font">geobats</a>.
         </p>
     </div>
-
     <!--End footer Section -->
+
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY  -->
     <script src="assets/plugins/jquery-1.10.2.js"></script>

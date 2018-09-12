@@ -7,235 +7,242 @@
 <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!--[if IE]>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-  <title>UTKL Research Group</title>
-  <!--REQUIRED STYLE SHEETS-->
-  <!-- BOOTSTRAP CORE STYLE CSS -->
-  <link href="assets/flags/css/flag-icon.css" rel="stylesheet" />
-  <!-- BOOTSTRAP CORE STYLE CSS -->
-  <link href="assets/css/nuosc_bootstrap.css" rel="stylesheet" />
-  <!-- FONTAWESOME STYLE CSS -->
-  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <!-- VEGAS STYLE CSS -->
-  <link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
-  <!-- CUSTOM STYLE CSS -->
-  <link href="assets/css/nuosc_style.css" rel="stylesheet" />
-  <!-- GOOGLE FONT -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<title>UTKL Research Group</title>
+	<!--REQUIRED STYLE SHEETS-->
+	<!-- BOOTSTRAP CORE STYLE CSS -->
+	<link href="assets/flags/css/flag-icon.css" rel="stylesheet" />
+	<!-- BOOTSTRAP CORE STYLE CSS -->
+	<link href="assets/css/nuosc_bootstrap.css" rel="stylesheet" />
+	<!-- FONTAWESOME STYLE CSS -->
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<!-- VEGAS STYLE CSS -->
+	<link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
+	<!-- CUSTOM STYLE CSS -->
+	<link href="assets/css/nuosc_style.css" rel="stylesheet" />
+	<!-- GOOGLE FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <style>
-      #drop-cap::first-letter {
-        float: left;
-        font-size: 85px;
-        line-height: 1;
-        font-family: "Times New Roman", Times, serif;
-        font-weight: bold;
-        margin-right: 9px;
-      }
+    	#drop-cap::first-letter
+		{
+        	float: left;
+        	font-size: 85px;
+        	line-height: 1;
+        	font-family: "Times New Roman", Times, serif;
+        	font-weight: bold;
+        	margin-right: 9px;
+    	}
     </style>
 
-  <!-- Adding MathJax to show mathematical formula -->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<!-- Adding MathJax to show mathematical formula -->
+	<script type="text/x-mathjax-config">
+    	MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
+	</script>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-  <!-- CHECK ELEMENT IN VIEWPORT OR NOR SCRIPT -->
-  <!--- Dungy's script (bug: previous button's state is not changed when scroll down) -->
-  <script>
-  var sectionIDs = ["#miner_intro", "#sensitivity"];
-  var navbarItemIDs = ["#navbar-nav-item-miner_intro", "#navbar-nav-item-sensitivity"];
-  var list = [];
-  var previousHighlightedID = -1;
-  var currentHighlightedID = -1;
-  setInterval(function() {
-    for (i = 0; i < sectionIDs.length; i++) {
-      if ($(sectionIDs[i]).isOnScreen(
-        function(deltas){
-          return deltas.top >= 400 && deltas.bottom >= 400;
-        }
-      )) {
-        list.push(i);
-      }
-    }
-    if (list.length == 1) {
-      currentHighlightedID = list[0];
-    } else if (list.length == 2) {
-      currentHighlightedID = list[0];
-    } else {
-      currentHighlightedID = list[1];
-    }
+	<!-- CHECK ELEMENT IN VIEWPORT OR NOR SCRIPT -->
+	<!--- Dungy's script (bug: previous button's state is not changed when scroll down) -->
+	<script>
+		var sectionIDs = ["#miner_intro", "#sensitivity"];
+		var navbarItemIDs = ["#navbar-nav-item-miner_intro", "#navbar-nav-item-sensitivity"];
+		var list = [];
+		var previousHighlightedID = -1;
+		var currentHighlightedID = -1;
+		setInterval( function()
+		{
+    		for (i = 0; i < sectionIDs.length; i++)
+			{
+    			if ($(sectionIDs[i]).isOnScreen( function(deltas)
+				{
+        			return deltas.top >= 400 && deltas.bottom >= 400;
+        		}
+    			))
+				{
+        			list.push(i);
+    			}
+			}
+			if (list.length == 1)
+			{
+    			currentHighlightedID = list[0];
+    		}
+			else if (list.length == 2)
+			{
+    			currentHighlightedID = list[0];
+    		}
+			else
+			{
+    			currentHighlightedID = list[1];
+    		}
 
-    for (i = 0; i < sectionIDs.length; i++) {
-      list.shift();
-    }
+    		for (i = 0; i < sectionIDs.length; i++)
+			{
+    			list.shift();
+    		}
 
-    if (currentHighlightedID != previousHighlightedID) {
-      $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
-      $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
-      previousHighlightedID = currentHighlightedID;
-    }
-  }, 100);
-  </script>
-
+    		if (currentHighlightedID != previousHighlightedID)
+			{
+    			$(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
+    			$(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
+    			previousHighlightedID = currentHighlightedID;
+    		}
+		}, 100);
+	</script>
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar-inverse" role="navigation" style="position:fixed;">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	<!-- Navigation -->
+	<nav class="navbar-inverse" role="navigation" style="position:fixed;">
+    	<div class="container">
+    		<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-      </div>
-      <!-- Collect the nav links for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li id="navbar-nav-item-home"><a href="index.html"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:5px;width:80px;text-align:left;"></i></a>
-          </li>
-          <li id="navbar-nav-item-miner_intro"><a href="#miner_intro" style="font-weight:bold;">Intro</a>
-          </li>
-          <li id="navbar-nav-item-sensitivity"><a href="#sensitivity" style="font-weight:bold;">Sensitivity</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!--End Navigation -->
+    		</div>
+    		<!-- Collect the nav links for toggling -->
+    		<div class="collapse navbar-collapse navbar-ex1-collapse">
+        		<ul class="nav navbar-nav">
+        			<li id="navbar-nav-item-home"><a href="index.html"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:5px;width:80px;text-align:left;"></i></a>
+        			</li>
+        			<li id="navbar-nav-item-miner_intro"><a href="#miner_intro" style="font-weight:bold;">Intro</a>
+        			</li>
+        			<li id="navbar-nav-item-sensitivity"><a href="#sensitivity" style="font-weight:bold;">Sensitivity</a>
+        			</li>
+        		</ul>
+    		</div>
+    		<!-- /.navbar-collapse -->
+    	</div>
+    	<!-- /.container -->
+	</nav>
+	<!--End Navigation -->
 
+	<!-- NuOsc Intro Section -->
+	<section class="for-full-back color-white">
+    	<div class="container">
+    		<div class="row text-center">
+        		<div class="col-md-12">
+        			<h1 style="font-weight:bold;">Coherent Elastic Neutrino-Nucleus Scattering</h1>
+        			</br>
+        			</br>
+        			</br>
+        		</div>
+    		</div>
+    	</div>
+	</section>
+	<!--End NuOsc Introduction Section -->
 
-  <!-- NuOsc Intro Section -->
-  <section class="for-full-back color-white">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">Coherent Elastic Neutrino-Nucleus Scattering</h1>
-          </br>
-          </br>
-          </br>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End NuOsc Introduction Section -->
+	<!-- MINOS Intro Section -->
+	<section class="for-full-back color-dark" id="miner_intro">
+    	<div class="container">
+    		<div class="row text-center">
+        		<div class="col-md-12">
+        			<h1><img src="assets/img/miner.png" style="max-height:200px;"/></h1>
+        			<h4 align="justify" style="padding-left:50px; padding-right:50px; color:white;">
+            			Mitchell Institute Neutrino Experiment at Reactor (MINER) is a short-baseline neutrino experiment at the Nuclear Science Center (NSC) at Texas A\(\&\)M University. MINER proposes to probe (neutrino physics) coherent elastic neutrino-nucleus scattering (CNS) using ultra-low energy threshold cryogenic germanium detectors. Though CNS is a strong theoretical prediction of the Standard Model (SM)<!--\cite{Barranco:2005yy}-->, it has been observed only very recently, and never in electron neutrinos. Most importantly, low threshold detectors will allow will drastically neutrino detection rates as CNS has a cross-section much larger than traditional inverse beta-decay processes of neutrinos. Additionally, CNS is also an inescapable background for direct dark matter searches.
+        			</h4>
+        		</div>
+    		</div>
+    	</div>
+	</section>
+	<!--End MINOS Introduction Section -->
 
-  <!-- MINOS Intro Section -->
-  <section class="for-full-back color-dark" id="miner_intro">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1><img src="assets/img/miner.png" style="max-height:200px;"/></h1>
-          <h4 align="justify" style="padding-left:50px; padding-right:50px; color:white;">
-            Mitchell Institute Neutrino Experiment at Reactor (MINER) is a short-baseline neutrino experiment at the Nuclear Science Center (NSC) at Texas A\(\&\)M University. MINER proposes to probe (neutrino physics) coherent elastic neutrino-nucleus scattering (CNS) using ultra-low energy threshold cryogenic germanium detectors. Though CNS is a strong theoretical prediction of the Standard Model (SM)<!--\cite{Barranco:2005yy}-->, it has been observed only very recently, and never in electron neutrinos. Most importantly, low threshold detectors will allow will drastically neutrino detection rates as CNS has a cross-section much larger than traditional inverse beta-decay processes of neutrinos. Additionally, CNS is also an inescapable background for direct dark matter searches.
-          </h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End MINOS Introduction Section -->
+	<!-- MINER sensitivity Section -->
+	<section class="for-full-back color-white " id="sensitivity">
+    	<div class="container">
+    		<div class="row text-center">
+        		<div class="col-md-12">
+        			<h1 style="font-weight:bold;">MINER Sensitivity to CNS</h1>
+        			</br>
+        			</br>
+        			<div class="col-md-12">
+	            		<h4 align="justify" style="padding-left:50px; padding-right:50px;">
+	            			The germanium and silicon detectors will be placed $2-10$ m away from the reactor in the NSC. We would be using about \(5-20\) kg of cryogenic germanium detector$-$adapted from the SuperCDMS collaboration$-$with thresholds &lt100 eV. Being in the presence of the reactor core exposes are detector to a very large background flux of neutron and gamma particles. As we want to isolate CNS events, we would shield our detectors appropriately from these fluxes to increase the ratio between signal and background rate, \((\frac{S}{B})\). Analysis of MINER's backgrounds is done in [<a href="#miner_sens_ref_2">2</a>]. After shielding, MINER expects an \((\frac{S}{B})\) on the order of 1.
+	            		</h4>
+        			</div>
 
-  <!-- MINER sensitivity Section -->
-  <section class="for-full-back color-white " id="sensitivity">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 style="font-weight:bold;">MINER Sensitivity to CNS</h1>
-          </br>
-          </br>
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px;">
-              The germanium and silicon detectors will be placed $2-10$ m away from the reactor in the NSC. We would be using about \(5-20\) kg of cryogenic germanium detector$-$adapted from the SuperCDMS collaboration$-$with thresholds &lt100 eV. Being in the presence of the reactor core exposes are detector to a very large background flux of neutron and gamma particles. As we want to isolate CNS events, we would shield our detectors appropriately from these fluxes to increase the ratio between signal and background rate, \((\frac{S}{B})\). Analysis of MINER's backgrounds is done in [<a href="#miner_sens_ref_2">2</a>]. After shielding, MINER expects an \((\frac{S}{B})\) on the order of 1.
-            </h4>
-          </div>
+        			<img id="miner_sens_fig_1" src="assets/img/researchPlots/miner_sens/figure_5.png" style="max-height:600px;"/>
 
-          <img id="miner_sens_fig_1" src="assets/img/researchPlots/miner_sens/figure_5.png" style="max-height:600px;"/>
+        			<div class="col-md-8 col-md-offset-2">
+            			<p> Figure 1: Binned energy distribution of signal (neutrino) and background (gamma and neutron) events.</p>
+        			</div>
 
-          <div class="col-md-8 col-md-offset-2">
-            <p> Figure 1: Binned energy distribution of signal (neutrino) and background (gamma and neutron) events.</p>
-          </div>
+        			<div class="col-md-12">
+            			<h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+            				Analysis of MINER's sensitivity illustrates that within reasonable experimental constraints, MINER can discover CNS in electron neutrinos and determine its cross-section within a few months worth of runtime.
+            			</h4>
+        			</div>
 
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-              Analysis of MINER's sensitivity illustrates that within reasonable experimental constraints, MINER can discover CNS in electron neutrinos and determine its cross-section within a few months worth of runtime.
-            </h4>
-          </div>
+        			<img id="miner_sens_fig_2" src="assets/img/researchPlots/miner_sens/Chisquare_over_time.png" style="max-height:600px;"/>
 
-          <img id="miner_sens_fig_2" src="assets/img/researchPlots/miner_sens/Chisquare_over_time.png" style="max-height:600px;"/>
+        			<div class="col-md-8 col-md-offset-2">
+        				<p> Figure 2: Time evolution of \(\chi^2\) for specific experimental parameters.</p>
+        			</div>
 
-          <div class="col-md-8 col-md-offset-2">
-            <p> Figure 2: Time evolution of \(\chi^2\) for specific experimental parameters.</p>
-          </div>
+        			<div class="col-md-12">
+            			<h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+            				<a href="#miner_sens_fig_2">Fig. 2</a> shows how the chi-square improves with time and how the improvement changes when one experimental parameter varies. With a detector threshold around $50$ eV, $(\frac{S}{B})\sim 0.5-1$ and systematic error limited to about 20\(\%\), MINER can  discover CNS with 3-\(\sigma\) in a few weeks to two months. If we consider energy information of the neutrinos and perform a shape-based analysis, MINER can discover CNS much sooner and get a 5-\(\sigma\) discovery in a month. Similarly, <a href="#miner_sens_fig_2">Fig. 3</a> shows the improvement of the cross-section measurement precision with time. We see that the precision gets systematically limited in just a few months.
+            			</h4>
+        			</div>
 
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-              <a href="#miner_sens_fig_2">Fig. 2</a> shows how the chi-square improves with time and how the improvement changes when one experimental parameter varies. With a detector threshold around $50$ eV, $(\frac{S}{B})\sim 0.5-1$ and systematic error limited to about 20\(\%\), MINER can  discover CNS with 3-\(\sigma\) in a few weeks to two months. If we consider energy information of the neutrinos and perform a shape-based analysis, MINER can discover CNS much sooner and get a 5-\(\sigma\) discovery in a month. Similarly, <a href="#miner_sens_fig_2">Fig. 3</a> shows the improvement of the cross-section measurement precision with time. We see that the precision gets systematically limited in just a few months.
-            </h4>
-          </div>
+        			<img id="miner_sens_fig_3" src="assets/img/researchPlots/miner_sens/cs_improvement.png" style="max-height:600px;"/>
 
-          <img id="miner_sens_fig_3" src="assets/img/researchPlots/miner_sens/cs_improvement.png" style="max-height:600px;"/>
+        			<div class="col-md-8 col-md-offset-2">
+        				<p> Figure 3: Improvement of CNS cross-section precision \((\frac{d\sigma}{\sigma})\) with time.</p>
+        			</div>
 
-          <div class="col-md-8 col-md-offset-2">
-            <p> Figure 3: Improvement of CNS cross-section precision \((\frac{d\sigma}{\sigma})\) with time.</p>
-          </div>
+        			<div class="col-md-12">
+            			<h4 align="justify" style="padding-left:50px; padding-right:50px; ">
+            				Deviations of CNS from the standard model would be windows to possible new physics beyond the standard model. The ultra-low threshold detectors in this reactor setup can also be used to probe such processes. MINER also shows sensitivity to hypothetical \(4^{th}\) \(\textit{sterile neutrino}\) oscillations [<a href="#miner_sens_ref_3">3</a>] and \(\textit{neutrino decay}\) processes [<a href="#miner_sens_ref_4">4</a>].
+            			</h4>
+        			</div>
 
-          <div class="col-md-12">
-            <h4 align="justify" style="padding-left:50px; padding-right:50px; ">
-              Deviations of CNS from the standard model would be windows to possible new physics beyond the standard model. The ultra-low threshold detectors in this reactor setup can also be used to probe such processes. MINER also shows sensitivity to hypothetical \(4^{th}\) \(\textit{sterile neutrino}\) oscillations [<a href="#miner_sens_ref_3">3</a>] and \(\textit{neutrino decay}\) processes [<a href="#miner_sens_ref_4">4</a>].
-            </h4>
-          </div>
+        			<div class="col-md-8 col-md-offset-2">
+            			<h4>References</h4>
+            				<p align="justify" style="padding-left:50px; padding-right:50px; ">
+            					<ol align="justify" style="padding-left:50px; padding-right:50px; ">
+                					<li id="miner_sens_ref_1">J. Barranco, O. G. Miranda, and T. I. Rashba. Probing new physics with coherent neutrino scattering off nuclei. JHEP, 12:021, 2005.</li>
+                					<li id="miner_sens_ref_2">G. Agnoletetal. Background Studies for the MINER Coherent Neutrino Scattering Reactor Experiment. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 853:53 – 60, 2017.</li>
+                					<li id="miner_sens_ref_3">P. Coloma, P. Huber, C.-M. Jen, and C. Mariani. Neutrino- nucleus interaction models and their impact on oscillation analyses. PRD, 89(073015), 2014.</li>
+                					<li id="miner_sens_ref_4">Jeffrey M. Berryman, Andr de Gouvła, Daniel Hernndez, and Roberto L N Oliveira. Non-unitary neutrino propagation from neutrino decay. Physics Letters, Section B: Nuclear, Elementary Particle and High-Energy Physics, 742:74–79, 3 2015.</li>
+            					</ol>
+            				</p>
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</section>
+	<!-- End MINER sensitivity Section -->
 
-          <div class="col-md-8 col-md-offset-2">
-            <h4>References</h4>
-            <p align="justify" style="padding-left:50px; padding-right:50px; ">
-              <ol align="justify" style="padding-left:50px; padding-right:50px; ">
-                <li id="miner_sens_ref_1">J. Barranco, O. G. Miranda, and T. I. Rashba. Probing new physics with coherent neutrino scattering off nuclei. JHEP, 12:021, 2005.</li>
-                <li id="miner_sens_ref_2">G. Agnoletetal. Background Studies for the MINER Coherent Neutrino Scattering Reactor Experiment. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 853:53 – 60, 2017.</li>
-                <li id="miner_sens_ref_3">P. Coloma, P. Huber, C.-M. Jen, and C. Mariani. Neutrino- nucleus interaction models and their impact on oscillation analyses. PRD, 89(073015), 2014.</li>
-                <li id="miner_sens_ref_4">Jeffrey M. Berryman, Andr de Gouvła, Daniel Hernndez, and Roberto L N Oliveira. Non-unitary neutrino propagation from neutrino decay. Physics Letters, Section B: Nuclear, Elementary Particle and High-Energy Physics, 742:74–79, 3 2015.</li>
-              </ol>
-            </p>
-          </div>
+	<!-- Footer Section -->
+	<div class="for-full-back" id="footer" style="padding-bottom:10px;">
+		<p align="center"><a href="https://www.utexas.edu"><img src="assets/img/ut_logo.png" width="20%" style="margin-bottom:-20px;"></a></p>
+    	<p style="color:#ed7900;font-size:120%;margin-bottom:-20px;" align="center">Copyright &copy; 2017 UTKL Research Group.</p>
+    	<p style="color:#ffffff;font-size:80%;margin-bottom:-10px;" align="center">
+    		This website is developed using <a href="http://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>, <a href="http://fontawesome.io/">font-awesome</a> and <a href="http://www.dafont.com/geobats.font">geobats</a>.
+    	</p>
+	</div>
+	<!-- End footer Section -->
 
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End MINER sensitivity Section -->
-
-  <!--footer Section -->
-  <div class="for-full-back" id="footer" style="padding-bottom:10px;">
-    <p align="center"><a href="https://www.utexas.edu"><img src="assets/img/ut_logo.png" width="20%" style="margin-bottom:-20px;"></a></p>
-    <p style="color:#ed7900;font-size:120%;margin-bottom:-20px;" align="center">Copyright &copy; 2017 UTKL Research Group.</p>
-    <p style="color:#ffffff;font-size:80%;margin-bottom:-10px;" align="center">
-      This website is developed using <a href="http://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>, <a href="http://fontawesome.io/">font-awesome</a> and <a href="http://www.dafont.com/geobats.font">geobats</a>.
-    </p>
-  </div>
-
-  <!--End footer Section -->
-  <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-  <!-- CORE JQUERY  -->
-  <script src="assets/plugins/jquery-1.10.2.js"></script>
-  <!-- BOOTSTRAP CORE SCRIPT   -->
-  <script src="assets/plugins/bootstrap.js"></script>
-  <!-- CUSTOM SCRIPTS -->
-  <script src="assets/js/custom.js"></script>
+	<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
+	<!-- CORE JQUERY -->
+	<script src="assets/plugins/jquery-1.10.2.js"></script>
+	<!-- BOOTSTRAP CORE SCRIPT   -->
+	<script src="assets/plugins/bootstrap.js"></script>
+	<!-- CUSTOM SCRIPTS -->
+	<script src="assets/js/custom.js"></script>
 </body>
 
 </html>

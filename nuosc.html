@@ -13,7 +13,7 @@
     <meta name="author" content="">
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
+    <![endif]-->
     <title>UTKL Research Group</title>
     <!--REQUIRED STYLE SHEETS-->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
@@ -31,11 +31,12 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <style>
-        #drop-cap::first-letter {
+        #drop-cap::first-letter
+		{
             float: left;
             font-size: 85px;
             line-height: 1;
@@ -59,40 +60,48 @@
         var list = [];
         var previousHighlightedID = -1;
         var currentHighlightedID = -1;
-        setInterval(function() {
-            for (i = 0; i < sectionIDs.length; i++) {
-                if ($(sectionIDs[i]).isOnScreen(
-                        function(deltas) {
-                            return deltas.top >= 400 && deltas.bottom >= 400;
-                        }
-                    )) {
+        setInterval( function()
+		{
+            for (i = 0; i < sectionIDs.length; i++)
+			{
+                if ($(sectionIDs[i]).isOnScreen( function(deltas)
+				{
+                    return deltas.top >= 400 && deltas.bottom >= 400;
+                }
+                ))
+				{
                     list.push(i);
                 }
             }
-            if (list.length == 1) {
+            if (list.length == 1)
+			{
                 currentHighlightedID = list[0];
-            } else if (list.length == 2) {
+            }
+			else if (list.length == 2)
+			{
                 currentHighlightedID = list[0];
-            } else {
+            }
+			else
+			{
                 currentHighlightedID = list[1];
             }
 
-            for (i = 0; i < sectionIDs.length; i++) {
+            for (i = 0; i < sectionIDs.length; i++)
+			{
                 list.shift();
             }
 
-            if (currentHighlightedID != previousHighlightedID) {
+            if (currentHighlightedID != previousHighlightedID)
+			{
                 $(navbarItemIDs[currentHighlightedID]).addClass("navbar-nav-li-active", 100, "swing");
                 $(navbarItemIDs[previousHighlightedID]).removeClass("navbar-nav-li-active", 100, "swing");
                 previousHighlightedID = currentHighlightedID;
             }
         }, 100);
     </script>
-
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar-inverse" role="navigation" style="position:fixed;">
         <div class="container">
@@ -108,17 +117,24 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <!-- <li id="navbar-nav-item-home"><a href="index.html"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:5px;width:80px;text-align:left;"></i></a>
-          </li>
-          <li id="navbar-nav-item-stdosc"><a href="#stdosc" style="font-weight:bold;">3-Flavor</a>
-          </li>
-          <li id="navbar-nav-item-sterile"><a href="#sterile" style="font-weight:bold;">Sterile \(\nu\)</a>
-          </li>
-          <li id="navbar-nav-item-led"><a href="#led" style="font-weight:bold;">LED</a>
-          </li>
-          -->
-                    <li id="navbar-nav-item-home"><a href="index.html" style="font-weight:bold;">Home</a>
-                    </li>
-                    <li id="navbar-nav-item-minos"><a href="#minos" style="font-weight:bold;">MINOS/MINOS+</a>
+        			</li>
+        			<li id="navbar-nav-item-stdosc"><a href="#stdosc" style="font-weight:bold;">3-Flavor</a>
+        			</li>
+        			<li id="navbar-nav-item-sterile"><a href="#sterile" style="font-weight:bold;">Sterile \(\nu\)</a>
+        			</li>
+        			<li id="navbar-nav-item-led"><a href="#led" style="font-weight:bold;">LED</a>
+        			</li> -->
+
+                    <!-- <li id="navbar-nav-item-home"><a href="index.html" style="font-weight:bold;">Home</a>
+                    </li> -->
+                    <li id="navbar-nabar-nav-item-home"><a href="index.html"><i class="fa fa-home" style="position:relative;font-size:130%;bottom:5px;width:80px;text-align:left;"></i></a>
+        			</li>
+        			<li id="navbar-nav-item-stdosc"><a href="#stdosc" style="font-weight:bold;">3-Flavor</a>
+        			</li>
+        			<li id="navbar-nav-item-sterile"><a href="#sterile" style="font-weight:bold;">Sterile \(\nu\)</a>
+        			</li>
+        			<li id="navbar-nav-item-led"><a href="#led" style="font-weight:bold;">LED</a>
+        			</li> -->v-item-minos"><a href="#minos" style="font-weight:bold;">MINOS/MINOS+</a>
                     </li>
                     <li id="navbar-nav-item-nova"><a href="#nova" style="font-weight:bold;">NOvA</a>
                     </li>
@@ -131,7 +147,6 @@
         <!-- /.container -->
     </nav>
     <!--End Navigation -->
-
 
     <!-- NuOsc Intro Section -->
     <section class="for-full-back color-white">
@@ -147,87 +162,85 @@
                         <p align="justify" style="padding-left:50px; padding-right:50px;">Learn about neutrino oscillations and how we study this phenomenon in MINOS/MINOS+ and NOvA. We also participate in simulation efforts for the future DUNE experiment.</p>
                     </h4>
 
-                    <!--
-          <div id="selected-work-carousel" class="carousel slide" data-ride="carousel">
-            <div style="height:600px;width:300px;position:absolute;right:-110px;" href="#selected-work-carousel" data-slide="next">
-            </div>
+        			<!-- <div id="selected-work-carousel" class="carousel slide" data-ride="carousel">
+            			<div style="height:600px;width:300px;position:absolute;right:-110px;" href="#selected-work-carousel" data-slide="next">
+            			</div>
 
-            <div style="height:600px;width:300px;position:absolute;left:-110px;" href="#selected-work-carousel" data-slide="prev">
-            </div>
+            			<div style="height:600px;width:300px;position:absolute;left:-110px;" href="#selected-work-carousel" data-slide="prev">
+            			</div>
 
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="row text-center g-pad-bottom">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white g-pad-bottom" style="height:600px;">
-                        <h2 style="font-weight:bold;">DUNE</h2>
-                        <p>77,000 tons of liquefied argon</p>
-                        <h4 align="justify" style="padding-left:50px; padding-right:50px;">
-                          Fermilab will provide the beam for the Deep Underground Neutrino Experiment. This experiment will use detectors on site and in a gold mine in Lead, South Dakota to search for differences between neutrinos and antineutrinos that may develop on their 800-mile trip.
-                          </br>
-                          </br>
-                          DID YOU KNOW?
-                          <ol>
-                            <li>The DUNE experiment draws 1,000 scientists from around the world to Fermilab making it the largest neutrino collaboration ever.</li>
-                            <li>The Homestake gold mine was the home of Ray Davis’s Nobel prize-winning experiment which saw neutrinos produced by the Sun.</li>
-                          </ol>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            			<div class="carousel-inner" role="listbox">
+            				<div class="item active">
+                				<div class="row text-center g-pad-bottom">
+                					<div class="col-md-10 col-md-offset-1">
+                    					<div class="col-md-10 col-md-offset-1">
+                    						<div class="service-div color-white g-pad-bottom" style="height:600px;">
+                        						<h2 style="font-weight:bold;">DUNE</h2>
+                        						<p>77,000 tons of liquefied argon</p>
+                        						<h4 align="justify" style="padding-left:50px; padding-right:50px;">
+                        							Fermilab will provide the beam for the Deep Underground Neutrino Experiment. This experiment will use detectors on site and in a gold mine in Lead, South Dakota to search for differences between neutrinos and antineutrinos that may develop on their 800-mile trip.
+                        							</br>
+                        							</br>
+                        							DID YOU KNOW?
+                        							<ol>
+                            							<li>The DUNE experiment draws 1,000 scientists from around the world to Fermilab making it the largest neutrino collaboration ever.</li>
+                            							<li>The Homestake gold mine was the home of Ray Davis’s Nobel prize-winning experiment which saw neutrinos produced by the Sun.</li>
+                        							</ol>
+                        						</h4>
+                    						</div>
+                    					</div>
+                					</div>
+                				</div>
+            				</div>
 
-              <div class="item">
-                <div class="row text-center g-pad-bottom">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white g-pad-bottom" style="height:600px;">
-                        <h2 style="font-weight:bold;">MINOS</h2>
-                        <p>6,000 tons of scintillator and steel</p>
-                        <h4 align="justify" style="padding-left:50px; padding-right:50px;">
-                          The MINOS experiment was the first long baseline experiment at Fermilab linking the neutrino beam at Fermilab to a detector located 450 miles away in Minnesota. MINOS’s measurements of neutrino oscillations and their speed of travel continue to be among most precise ever made.
-                          </br>
-                          </br>
-                          DID YOU KNOW?
-                          <ol>
-                            <li>The neutrino beam built for MINOS is the most powerful neutrino beam ever built.</li>
-                            <li>Construction of the MINOS detector assembled 12 million pounds of steel 2,300 feet underground in the Soudan iron mine.</li>
-                          </ol>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            				<div class="item">
+                				<div class="row text-center g-pad-bottom">
+                					<div class="col-md-10 col-md-offset-1">
+                    					<div class="col-md-10 col-md-offset-1">
+                    						<div class="service-div color-white g-pad-bottom" style="height:600px;">
+                        						<h2 style="font-weight:bold;">MINOS</h2>
+                        						<p>6,000 tons of scintillator and steel</p>
+                        						<h4 align="justify" style="padding-left:50px; padding-right:50px;">
+                        							The MINOS experiment was the first long baseline experiment at Fermilab linking the neutrino beam at Fermilab to a detector located 450 miles away in Minnesota. MINOS’s measurements of neutrino oscillations and their speed of travel continue to be among most precise ever made.
+                        							</br>
+                        							</br>
+                        							DID YOU KNOW?
+                        							<ol>
+                    									<li>The neutrino beam built for MINOS is the most powerful neutrino beam ever built.</li>
+                            							<li>Construction of the MINOS detector assembled 12 million pounds of steel 2,300 feet underground in the Soudan iron mine.</li>
+                        							</ol>
+                        						</h4>
+                    						</div>
+                    					</div>
+                					</div>
+                				</div>
+            				</div>
 
-              <div class="item">
-                <div class="row text-center g-pad-bottom">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="service-div color-white g-pad-bottom" style="height:600px;">
-                        <h2 style="font-weight:bold;">NOvA</h2>
-                        <p>15,000 tons of PVC plastic and liquid scintillator</p>
-                        <h4 align="justify" style="padding-left:50px; padding-right:50px;">
-                          The NOvA experiment uses two detectors at Fermilab and Ash River, MN separated by the largest distance of any neutrino experiment in operation. This large distance gives NOvA a unique opportunity to answer many of the remaining questions in neutrino physics.
-                          </br>
-                          </br>
-                          DID YOU KNOW?
-                          <ol>
-                            <li>The NOvA detector is the size of an office building and is the largest free-standing plastic structure ever built.</li>
-                            <li>Construction of the NOvA experiment employed over 250 undergraduate students at the University of Minnesota, Twin Cities.</li>
-                          </ol>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            				<div class="item">
+                				<div class="row text-center g-pad-bottom">
+                					<div class="col-md-10 col-md-offset-1">
+                    					<div class="col-md-10 col-md-offset-1">
+                    						<div class="service-div color-white g-pad-bottom" style="height:600px;">
+                        						<h2 style="font-weight:bold;">NOvA</h2>
+                        						<p>15,000 tons of PVC plastic and liquid scintillator</p>
+                        						<h4 align="justify" style="padding-left:50px; padding-right:50px;">
+                        							The NOvA experiment uses two detectors at Fermilab and Ash River, MN separated by the largest distance of any neutrino experiment in operation. This large distance gives NOvA a unique opportunity to answer many of the remaining questions in neutrino physics.
+                        							</br>
+                        							</br>
+                        							DID YOU KNOW?
+                        							<ol>
+                            							<li>The NOvA detector is the size of an office building and is the largest free-standing plastic structure ever built.</li>
+                            							<li>Construction of the NOvA experiment employed over 250 undergraduate students at the University of Minnesota, Twin Cities.</li>
+                        							</ol>
+                        						</h4>
+                    						</div>
+                    					</div>
+                					</div>
+                				</div>
+            				</div>
 
-            </div>
-          </div>
-        -->
+        				</div>
+        			</div> -->
 
                 </div>
             </div>
@@ -686,8 +699,7 @@
                     <br/>
                     <br/>
                     <h4>
-                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Neutrino oscillations between three neutrino flavors (electron, muon, and tau) are experimentally well established through measurements of solar, atmospheric, nuclear reactor, and accelerator beam neutrinos [<a href="#sterile_ref_1">1</a>] and are consistent with LEP results constraining the number of light neutrinos to three (\(m_{\nu}
-                            < \frac{1}{2}m_{\text{Z}} \approx 45\,\text{GeV}\)) through measurements of the invisible part of the \(Z\) boson decay width [<a href="#sterile_ref_2">2</a>]. The three-flavor paradigm is discussed in more detail in <a href="#stdosc">Three-Flavor Oscillations</a>. There are, however, hints for the existence of an additional neutrino flavor. These include the anomalous electron antineutrino appearance in short-baseline muon antineutrino beams at LSND [<a href="#sterile_ref_3">3</a>] and MiniBooNE [<a href="#sterile_ref_4">4</a>], which require a fourth neutrino state corresponding to a mass-splitting scale of about 1 eV\(^2\). Given the LEP measurements, such a neutrino state would not couple through the Standard Model interactions and as such is called a sterile neutrino.</p>
+                        <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Neutrino oscillations between three neutrino flavors (electron, muon, and tau) are experimentally well established through measurements of solar, atmospheric, nuclear reactor, and accelerator beam neutrinos [<a href="#sterile_ref_1">1</a>] and are consistent with LEP results constraining the number of light neutrinos to three (\(m_{\nu} < \frac{1}{2}m_{\text{Z}} \approx 45\,\text{GeV}\)) through measurements of the invisible part of the \(Z\) boson decay width [<a href="#sterile_ref_2">2</a>]. The three-flavor paradigm is discussed in more detail in <a href="#stdosc">Three-Flavor Oscillations</a>. There are, however, hints for the existence of an additional neutrino flavor. These include the anomalous electron antineutrino appearance in short-baseline muon antineutrino beams at LSND [<a href="#sterile_ref_3">3</a>] and MiniBooNE [<a href="#sterile_ref_4">4</a>], which require a fourth neutrino state corresponding to a mass-splitting scale of about 1 eV\(^2\). Given the LEP measurements, such a neutrino state would not couple through the Standard Model interactions and as such is called a sterile neutrino.</p>
 
                         <p align="justify" style="padding-left:50px; padding-right:50px; color:white;">Mixing between the three active neutrinos and the sterile neutrino modifies the three-flavor oscillation probabilities, as illustrated in <a href="#sterile-neutrino-carousel">Fig. 1</a>. The \(3\times3\) matrix describing mixing in the three-flavor paradigm can be extended to a \(4\times4\) matrix to accommodate the fourth neutrino state, as illustrated in <a href="#sterile-neutrino-carousel">Fig. 1</a>. This introduces three additional mixing angles, \(\theta_{14}\), \(\theta_{24}\), and \(\theta_{34}\), as well as two additional charge-parity (CP) violating phases, \(\delta_{14}\) and \(\delta_{24}\). Furthermore, three new mass-splittings, \(\Delta m^2_{41}\), \(\Delta m^2_{42}\) and \(\Delta m^2_{43}\), enter the oscillation probabilities.</p>
                     </h4>
@@ -1019,8 +1031,6 @@
     </section>
     <!--End Sterile Neutrinos Section -->
 
-
-
     <!-- MINOS LED Section -->
     <section class="for-full-back color-white " id="led">
         <div class="container">
@@ -1079,8 +1089,7 @@
                                 <li id="led_ref_7">R. N. Mohapatra, S. Nandi, and A. Perez-Lorenzana, Phys. Lett. B. 466, 115 (1999).</br> R. N. Mohapatra and A. Perez-Lorenzana, Nucl. Phys. B. 576, 466 (2000). </br> R. N. Mohapatra and A. Perez-Lorenzana, Nucl. Phys. B. 593, 451 (2001).</li>
                                 <li id="led_ref_8">H. Davoudiasl, P. Langacker, and M. Perelstein, Phys. Rev. D. 65, 105015 (2002).</li>
                                 <li id="led_ref_9">P. A. N. Machado, H. Nunokawa, and R. Zukanovich Funchal, Phys. Rev. D. 84, 013003 (2011).</li>
-                                <li id="led_ref_10">P. Adamson
-                                    <emph>et al.</emph> (MINOS Collaboration), Phys. Rev. D. 94, 111101(R) (2016).</li>
+                                <li id="led_ref_10">P. Adamson <emph>et al.</emph> (MINOS Collaboration), Phys. Rev. D. 94, 111101(R) (2016).</li>
                             </ol>
                         </p>
                     </div>
